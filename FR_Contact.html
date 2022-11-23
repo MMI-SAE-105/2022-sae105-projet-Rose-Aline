@@ -9,9 +9,21 @@
         </head>
 
       <body>
-            <form>
-            <input type="Nom / Prénom">
-            <input type="Objet">
-            <input type="Votre message">          
-        </form>
+        <h1>Contact</h1>
+        <form>
+          <div>
+              <label for="name">Nom / Prénom</label>
+              <input type="text" id="name" name="user_name">
+          </div>
+          <div>
+              <label for="objet">objet</label>
+              <input type="objet" id="objet" name="objet">
+          </div>
+          <div>
+              <label for="msg">Message :</label>
+              <textarea id="msg" name="user_message"></textarea>
+          </div>
+          <input type="submit" value="Envoyer">
+      </form>
+      
 </body>
