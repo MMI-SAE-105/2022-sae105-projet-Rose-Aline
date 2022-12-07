@@ -9,8 +9,13 @@
 
 body {
   font-family: var(--article--regular);
-  background: radial-gradient(var(--white), var(--dark-grey));}
+  background: radial-gradient(var(--white), var(--dark-grey))
+}
 
-h1 {font-family: var(--big-article-title); color:var(--light-blue)}
+h1 {
+  font-family: var(--big-article-title); color:var(--light-blue)
+}
 
-h2 {font-family: var(--intertitre); color:var(--yellow)};
+h2 {
+  font-family: var(--intertitre); color:var(--yellow)
+}

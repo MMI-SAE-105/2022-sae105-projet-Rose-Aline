@@ -11,22 +11,22 @@
   
   height:334px;
   width: auto
-       }
+}
 
-  .carousel_img
-  {
+  .carousel_img {
 display: block;
   margin-left: auto;
   margin-right: auto;
-box-shadow: var(--picture-drop-shadow);  }
+box-shadow: var(--picture-drop-shadow);  
+}
 
 
 
-.header__menuBtn
-{ position:relative;
+.header__menuBtn { position:relative;
   z-index:10;}
-        
+
 .noscroll
 .noscroll body 
-{overflow:hidden;}
+{overflow:hidden;
+}
 
