@@ -21,12 +21,9 @@ box-shadow: var(--picture-drop-shadow);
 }
 
 
-
-.header__menuBtn { position:relative;
-  z-index:10;}
-
-.noscroll
-.noscroll body 
-{overflow:hidden;
+.index_text
+{
+  font-family: var(--main-page-subtitles);
+  font-family: 'Bellota';
+  color:var(--light-text); 
 }
-
