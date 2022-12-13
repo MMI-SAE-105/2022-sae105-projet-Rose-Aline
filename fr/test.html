@@ -1,0 +1,250 @@
+<head>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    
+    
+    <style>
+    body
+    * {
+    box-sizing: border-box;
+    margin : 0;}
+    
+    img {
+        max-width: 100%;
+         height: auto;
+    }
+    
+    .carrousel_parent-ecrans {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    overflow-x:hidden
+    }
+    
+    .carrousel_ecran {
+        width: 100%;
+        flex:none;
+        scroll-snap-align: start;}
+    
+        .carrousel {
+      position: relative;
+    }
+    
+    .carrousel_btn {
+      position: absolute;
+      top: 50%; /* centre verticalement */
+      transform: translateY(-50%); /* methode du point mort */
+      width: 2rem;
+      height: 2rem;
+      background: rgba(0,0,0,0.5);
+      border-radius: 50%;
+      border: none;
+      display: grid;
+      place-content: center;
+      color: #fff;
+    }
+    
+    .carrousel_btn-avant {
+      left: 0;
+    }
+    
+    .carrousel_btn-apres {
+      right: 0;
+    
+    }
+    
+    .carrousel_ecran figure {
+        margin: 0;
+      }
+
+      @import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,400i,700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 20px;
+  line-height: 1.4;
+  color: #161b1e;
+}
+
+.carousel-circle {
+  width: 50vw;
+  height: 50vh;
+  margin: 10vh auto 0; /*OPTIONAL MARGIN*/
+}
+
+.text {
+  width: 100%;
+  height: 100%;
+  /*BLUE BG*/
+  background-image: url("/public/img/golden_circle_carousel.svg");
+  background-size: 100%;
+  background-repeat:no-repeat;
+  /*RED BG
+  background: radial-gradient(
+    ellipse at center,
+    rgba(210, 20, 20, 1) 0%,
+    rgba(210, 20, 20, 1) 70%,
+    rgba(210, 20, 20, 0) 70.3%
+  );*/
+  position: relative;
+  margin: 0;
+  color: white;
+}
+
+.text p {
+  height: 100%;
+  font-size: 3vw;
+  line-height: 1.25;
+  padding-top: 20;
+}
+
+.text::before {
+  content: "";
+  width: 50%;
+  height: 100%;
+  float: left;
+  shape-outside: polygon(
+    0 0,
+    45% 0%,
+    45% 45%,
+    0 100%
+  );
+}
+
+.text p::before {
+  content: "";
+  width: 50%;
+  height: 100%;
+  float: right;
+  shape-outside: polygon(
+    2% 0%,
+    100% 0%,
+    100% 100%,
+    2% 100%,
+    50% 94%,
+    76.6% 82.7%,
+    94% 65.6%,
+    100% 50%,
+    94% 32.6%,
+    76.6% 17.3%,
+    50% 6%
+  );
+  shape-margin: 7%;
+}
+
+.carousel-circle::before {
+  font-size: 270px;
+  height: 82px;
+  line-height: 0.78;
+  line-height: 1;
+  position: absolute;
+  top: -48px;
+  left: 0;
+  z-index: 1;
+  font-family: sans-serif, serif;
+  color: #ccc;
+  opacity: 0.9;
+}
+
+@media (min-width: 850px) {
+  .carousel-circle {
+    width: 370px;
+    height: 370px;
+  }
+
+  .carousel-circle::before {
+    font-size: 300px;
+  }
+
+  .text p {
+    font-size: 26px;
+  }
+
+}
+
+
+    </style>
+    </head>
+    
+    
+    <body>
+     <div class="carrousel" x-data="{}">
+        <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant" @click ="$refs.parent.scrollLeft -= $refs.parent.clientWidth" ><</button><button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant" @click ="$refs.parent.scrollLeft += $refs.parent.clientWidth" >></button>
+        <div class="carrousel_parent-ecrans" x-ref="parent">
+
+            <div id="ecran-1" class="carrousel_ecran" >
+                <figure>
+                    <img src="/public/img/Music.webp" alt="Image écran 1 : l'album everywhere at the end of time">
+                    <figcaption>
+
+                      <div class="carousel-circle">
+                        <div class="text">
+                        <p>Découverte de la perte de mémoire et du temps à travers l’album Everywhere at the end of time de The Caretaker</p>
+                        </div>
+                      </div>    
+                 </figcaption> 
+                </figure>
+            </div>
+
+            <div id="ecran-2" class="carrousel_ecran">
+                <figure>
+                    <img src="/public/img/illustration_brown.webp" alt="Image écran 2 : Illustration de matin brun par Enki Bilal">
+                    <figcaption>Matin brun est une nouvelle qui traite des risques totalitaires et de leurs installations dans nos vies quotidiennes.
+                        <img src="/public/icons/icon_book.svg" alt="Bouton clickable pour accéder a l'article">
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div id="ecran-3" class="carrousel_ecran">
+                <figure>
+                    <img src="/public/img/Film.webp" alt="Image écran 3 : Image provenant du film les triplettes de Bellevilles">
+                    <figcaption>Les Triplettes de Belleville est un film d’animation  par Sylvain Chomet  qui nous transporte dans une  époque entre réalité et imaginaire.
+                        <img src="/public/icons/icon_movie.svg" alt="Bouton clickable pour accéder a l'article">
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div id="ecran-4" class="carrousel_ecran">
+                <figure>
+                    <img src="/public/img/Lieu.webp" alt="Image écran 4 : Image de la piscine Deep Dive Dubai">
+                    <figcaption>Deep Dive Dubai est le paradis des plongeurs qui souhaitent explorer une ville moderne figée dans le temps.
+                        <img src="/public/icons/icon_location.svg" alt="Bouton clickable pour accéder a l'article">
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div id="ecran-5" class="carrousel_ecran">
+                <figure>
+                    <img src="/public/img/Regret.webp" alt="Image écran 5 : Image d'un réveil">
+                    <figcaption>Notre génération a développé une autre notion du temps et a perdu la capacité d’apprécier la sensation d’ennui.
+                        <img src="/public/icons/icon_regret.svg" alt="Bouton clickable pour accéder a l'article">
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div id="ecran-6" class="carrousel_ecran">
+                <figure>
+                    <img src="/public/img/Espoir.webp" alt="Image écran 6 : Image d'une personne tenant un ordinateur portable">
+                    <figcaption>Le télétravail est une opportunité dans le futur pour une vie plus organisée, efficace et libre.
+                        <img src="/public/icons/icon_hope.svg" alt="Bouton clickable pour accéder a l'article">
+                    </figcaption>
+                </figure>
+        </div>
+     </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    </body>
+    
+    
