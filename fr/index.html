@@ -20,14 +20,14 @@
     <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
       <img src="/public/icons/menu_icon.webp" alt="Icone cliquable pour accéder au menu">
     </button> 
-
+  </div>
     <nav id="mainNav"  
         class="menu" :class="menuIsOpen && 'menu--open'"
     >
       <ul>
         <div class="menutext">
         <li>
-            <img src="/public/icons/Accueil_icon.svg" alt="Icone d'acceuil">
+            <img src="/public/icons/Accueil_icon.svg" alt="Icone d'acceuil" >
             <a href="index.html">Accueil</a>
           </li>
 
@@ -90,9 +90,79 @@
   <img src="/public/icons/Golden_Wave.svg" alt="vague decorative">
   </div>
 
-
   <div class="index">
-    <img src="/public/img/Music.webp" alt="Image de l'album everywhere at the end of time" class="carousel_img">
+  <!-- Carousel-->
+
+  <div class="carousel" x-data="{}">
+    <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant" @click ="$refs.parent.scrollLeft -= $refs.parent.clientWidth" ></button><button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant" @click ="$refs.parent.scrollLeft += $refs.parent.clientWidth" >></button>
+    <div class="carrousel_parent-ecrans" x-ref="parent">
+        <div id="ecran-1" class="carrousel_ecran" >
+
+            <figure>
+                <img src="/public/img/Music.webp" alt="Image écran 1 : l'album everywhere at the end of time" class="img_carousel">
+                <figcaption>
+                  <div class="carousel_circle">
+                    <div class="text">
+                      <img src="/public/icons/icon_music_wh.svg" class="icon_carousel">
+                      <p>Découverte de la perte de mémoire et du temps à travers l’album Everywhere at the end of time de The Caretaker</p>
+                      <p> <a href="Contact.html">Voir plus</a></p>
+                    
+                    </div>
+                  </div>    
+             </figcaption> 
+            </figure>
+        </div>
+
+        <div id="ecran-2" class="carrousel_ecran">
+            <figure>
+                <img src="/public/img/illustration_brown.webp" alt="Image écran 2 : Illustration de matin brun par Enki Bilal">
+                <figcaption>Matin brun est une nouvelle qui traite des risques totalitaires et de leurs installations dans nos vies quotidiennes.
+                    <img src="/public/icons/icon_book.svg" alt="Bouton clickable pour accéder a l'article">
+                </figcaption>
+            </figure>
+        </div>
+
+        <div id="ecran-3" class="carrousel_ecran">
+            <figure>
+                <img src="/public/img/Film.webp" alt="Image écran 3 : Image provenant du film les triplettes de Bellevilles">
+                <figcaption>Les Triplettes de Belleville est un film d’animation  par Sylvain Chomet  qui nous transporte dans une  époque entre réalité et imaginaire.
+                    <img src="/public/icons/icon_movie.svg" alt="Bouton clickable pour accéder a l'article" >
+                </figcaption>
+            </figure>
+        </div>
+
+        <div id="ecran-4" class="carrousel_ecran">
+            <figure>
+                <img src="/public/img/Lieu.webp" alt="Image écran 4 : Image de la piscine Deep Dive Dubai">
+                <figcaption>Deep Dive Dubai est le paradis des plongeurs qui souhaitent explorer une ville moderne figée dans le temps.
+                    <img src="/public/icons/icon_location.svg" alt="Bouton clickable pour accéder a l'article">
+                </figcaption>
+            </figure>
+        </div>
+
+        <div id="ecran-5" class="carrousel_ecran">
+            <figure>
+                <img src="/public/img/Regret.webp" alt="Image écran 5 : Image d'un réveil">
+                <figcaption>Notre génération a développé une autre notion du temps et a perdu la capacité d’apprécier la sensation d’ennui.
+                    <img src="/public/icons/icon_regret.svg" alt="Bouton clickable pour accéder a l'article">
+                </figcaption>
+            </figure>
+        </div>
+
+        <div id="ecran-6" class="carrousel_ecran">
+            <figure>
+                <img src="/public/img/Espoir.webp" alt="Image écran 6 : Image d'une personne tenant un ordinateur portable">
+                <figcaption>Le télétravail est une opportunité dans le futur pour une vie plus organisée, efficace et libre.
+                    <img src="/public/icons/icon_hope.svg" alt="Bouton clickable pour accéder a l'article">
+                </figcaption>
+            </figure>
+    </div>
+ </div>
+</div>
+
+ <!-- Fin Carousel-->
+
+
   </div>
 
   <footer>
