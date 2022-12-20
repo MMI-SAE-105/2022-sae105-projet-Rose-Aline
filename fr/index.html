@@ -13,14 +13,20 @@
 
 <body>
 
-  <header class="header">
-    <div class="headertext">  The flow of Time </div>
+  <!-- Header-->
+
+    <header class="header">
+      <div class="headertext">  The flow of Time </div>
+        <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
+          <img src="/public/icons/menu_icon.webp" alt="Icone cliquable pour accéder au menu">
+        </button> 
+      </div>
+    </header>
+  <!-- Fin Header-->
 
 
-    <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
-      <img src="/public/icons/menu_icon.webp" alt="Icone cliquable pour accéder au menu">
-    </button> 
-  </div>
+  <!-- Menu -->
+
     <nav id="mainNav"  
         class="menu" :class="menuIsOpen && 'menu--open'"
     >
@@ -79,18 +85,23 @@
       <a href="Glossaire.html">   GLOSSAIRE </a>
     </div>
    </nav>
-  
-  </header>
 
-  <div class="index_picture">
-    <img src="/public/icons/Logo_Site.svg" alt="Logo du site 'The Flow of Time'">
-    <div class="index_text">
-      Exploration du temps et de ses mystères
+  <!-- Fin menu-->
+
+  <!-- Title -->
+
+    <div class="index_picture">
+      <img src="/public/icons/Logo_Site.svg" alt="Logo du site 'The Flow of Time'">
+      <div class="index_text">
+        Exploration du temps et de ses mystères
+      </div>
+    <img src="/public/icons/Golden_Wave.svg" alt="vague decorative">
     </div>
-  <img src="/public/icons/Golden_Wave.svg" alt="vague decorative">
-  </div>
 
-  <div class="index">
+    <div class="index">
+
+  <!-- Fin Title-->
+
   <!-- Carousel-->
 
   <div class="carousel" x-data="{}">
@@ -156,25 +167,30 @@
                     <img src="/public/icons/icon_hope.svg" alt="Bouton clickable pour accéder a l'article">
                 </figcaption>
             </figure>
+        </div>
+      </div>
     </div>
- </div>
-</div>
-
- <!-- Fin Carousel-->
-
-
   </div>
 
-  <footer>
-    <div class="footer">  
-    Aline ROSE MMI 1 - C1  
-    <a href="mailto:alinerose262003@gmail.com"> alinerose262003@gmail.com </a>
-    Projet réalisé dans le cadre d’un exercice
-  pédagogique au <a href="http://mmimontbeliard.com/contact"> département MMI de Montbéliard </a>
-  <img src="/public/icons/logo_MMI.svg" alt="Logo du site du département MMI de Montbéliard">
-  <div>
-  </footer>
+  <!-- Fin Carousel-->
 
+
+
+  <!-- Footer-->
+
+  <div class="wave">  
+    <footer>
+      <div class="footer">  
+        Aline ROSE MMI 1 - C1  
+          <a href="mailto:alinerose262003@gmail.com"> alinerose262003@gmail.com </a>
+          Projet réalisé dans le cadre d’un exercice
+          pédagogique au <a href="http://mmimontbeliard.com/contact"> département MMI de Montbéliard </a>
+          <img src="/public/icons/logo_MMI.svg" alt="Logo du site du département MMI de Montbéliard">
+      <div>
+    </footer>
+  </div>
+
+  <!-- Fin Footer-->
 
 </body>
 

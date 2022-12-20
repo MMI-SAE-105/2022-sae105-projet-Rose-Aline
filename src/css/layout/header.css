@@ -1,11 +1,13 @@
 .header {
     background: var(--light-blue);
     height:50px;
+    width:100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    z-index:2;
+    z-index:3;
+    position:relative
     }
     
 
@@ -15,8 +17,7 @@
     font-weight: bold;
     display: block;
     position:relative;
-    z-index:2;
-
+    z-index:3;
 }
 
     button {
@@ -63,7 +64,7 @@ a:hover {
 
 .header__menuBtn {
     position:relative;
-    z-index:2;
+    z-index:3;
 }
   
   .noscroll
@@ -71,4 +72,3 @@ a:hover {
   {
     overflow:hidden;
   }
-
