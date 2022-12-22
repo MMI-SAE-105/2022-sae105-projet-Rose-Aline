@@ -7,7 +7,7 @@
   padding: 0%
 }
 
-body {
+body#article {
   font-family: var(--article--regular);
   background: radial-gradient(var(--white), var(--dark-grey))
 }

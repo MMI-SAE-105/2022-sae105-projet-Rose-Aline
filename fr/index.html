@@ -11,7 +11,7 @@
 
 </head>
 
-<body>
+<body id="home">
 
   <!-- Header-->
 
@@ -98,11 +98,12 @@
     <img src="/public/icons/Golden_Wave.svg" alt="vague decorative">
     </div>
 
-    <div class="index">
 
   <!-- Fin Title-->
 
   <!-- Carousel-->
+
+  <div class="index">
 
   <div class="carousel" x-data="{}">
     <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant" @click ="$refs.parent.scrollLeft -= $refs.parent.clientWidth" ></button><button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant" @click ="$refs.parent.scrollLeft += $refs.parent.clientWidth" >></button>
@@ -178,16 +179,24 @@
 
   <!-- Footer-->
 
-      <div class="wave">  
-        Aline ROSE MMI 1 - C1  
-          <a href="mailto:alinerose262003@gmail.com"> alinerose262003@gmail.com </a>
-          Projet réalisé dans le cadre d’un exercice
-          pédagogique au <a href="http://mmimontbeliard.com/contact"> département MMI de Montbéliard </a>
-          <img src="/public/icons/logo_MMI.svg" alt="Logo du site du département MMI de Montbéliard">
-      <div>
-    </footer>
+  
+      <footer> 
+        <div class="footer_main"> 
+            <div class="footer_text"> 
+                <p>Aline ROSE MMI 1 - C1</p>
+                <a href="mailto:alinerose262003@gmail.com"> alinerose262003@gmail.com </a>
+                  <div class="footer_icon"> 
+                      <p>Projet réalisé dans le cadre d’un exercice
+                      pédagogique au
+                      <a href="http://mmimontbeliard.com/contact"> département MMI de Montbéliard </a></p>
+                      <img src="/public/icons/logo_MMI.svg" alt="Logo du site du département MMI de Montbéliard">
+                  </div>
+            </div>
+         </div>
+      </footer>
 
   <!-- Fin Footer-->
+  
 
 </body>
 
