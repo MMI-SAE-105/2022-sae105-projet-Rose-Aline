@@ -31,7 +31,6 @@
         class="menu" :class="menuIsOpen && 'menu--open'"
     >
       <ul>
-        <div class="menutext">
         <li>
             <img src="/public/icons/Accueil_icon.svg" alt="Icone d'acceuil" >
             <a href="index.html">Accueil</a>
@@ -66,23 +65,27 @@
             <img src="/public/icons/icon_regret.svg" alt="Icone regret">
             <a href="La_notion_du_temps.html">La notion du temps</a>
           </li>
+        </ul>
 
-          <li>
-            <a href="Contact.html">• CONTACT</a>
-          </li>
+          <div class="menu_section_jaune">
+              <ul>
+                <li>
+                  <a href="Contact.html">• CONTACT</a>
+                </li>
 
-          <li>
-            <a href="Autres_Projets.html">• AUTRES PROJETS </a>
-          </li>
-            
-          <li>
-          <a href="A_propos.html"> • À PROPOS</a>
-        </li>
-      </ul>
-    
-      <a href="../eng/index.html" onclick="document.cookie = 'nf_lang=eng; path=/'"><img src="/public/icons/ENG_icon.svg" alt="Icone cliquable pour changer la langue en anglais" ></a>
-      <a href="../fr/index.html" onclick="document.cookie = 'nf_lang=fr; path=/'"><img src="/public/icons/FR_icon.svg" alt="Icone cliquable pour changer la langue en français"></a>
-      <a href="Glossaire.html">   GLOSSAIRE </a>
+                <li>
+                  <a href="Autres_Projets.html">• AUTRES PROJETS </a>
+                </li>
+                  
+                <li>
+                <a href="A_propos.html"> • À PROPOS</a>
+                </li>
+              </ul>
+          
+              <a href="../eng/index.html" onclick="document.cookie = 'nf_lang=eng; path=/'"><img src="/public/icons/ENG_icon.svg" alt="Icone cliquable pour changer la langue en anglais" ></a>
+              <a href="../fr/index.html" onclick="document.cookie = 'nf_lang=fr; path=/'"><img src="/public/icons/FR_icon.svg" alt="Icone cliquable pour changer la langue en français"></a>
+              <a href="Glossaire.html">   GLOSSAIRE </a>
+        </div>
     </div>
    </nav>
 
@@ -91,13 +94,10 @@
   <!-- Title -->
 
     <div class="index_picture">
-      <img src="/public/icons/Logo_Site.svg" alt="Logo du site 'The Flow of Time'">
-      <div class="index_text">
-        Exploration du temps et de ses mystères
-      </div>
-    <img src="/public/icons/Golden_Wave.svg" alt="vague decorative">
+        <img src="/public/icons/Logo_Site.svg" alt="Logo du site 'The Flow of Time'">
+          <p>Exploration du temps</p> <p>et de ses mystères</p>
+          <img src="/public/icons/Golden_Wave.svg" alt="vague decorative" class="subtitle_wave">
     </div>
-
 
   <!-- Fin Title-->
 
