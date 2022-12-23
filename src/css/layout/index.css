@@ -1,7 +1,6 @@
 
 body#home {
    background-color: var(--light-blue);
-   overflow-y: hidden;
    }
 
 
@@ -15,16 +14,25 @@ body#home {
 .index_picture {
   background-image: url("/public/img/index_picture.webp");
   background-size: 100%;
-  padding-bottom: 9rem;
+  padding-bottom: 4rem;
   background-repeat:no-repeat;
-  background-size: cover;
+  background-size: stretch;
+  background-position: right 0 bottom 0 ;
+  padding-left: 30px;
+  padding-top: 30px;
 }
 
-.index_text
-{
+.index_picture p {
   font-family: var(--main-page-subtitles);
   font-family: 'Bellota';
   color:var(--light-text); 
+  font-size:5vw;
+  padding-left: 15px;
+}
+
+.subtitle_wave{
+  padding-left: 3rem;
+  padding-top: 12px
 }
 
 
@@ -33,8 +41,6 @@ body#home {
   width: 75%;
   height:auto
 }
-
-
 
 .carrousel_parent-ecrans {
 display: flex;
@@ -72,11 +78,13 @@ scroll-snap-align: start;
 
 .carrousel_btn-avant {
   background-image: url("/public/icons/left_arrow_carousel.svg");
+  background-repeat:no-repeat;
   left: 0;
 }
 
 .carrousel_btn-apres {
   background-image: url("/public/icons/right_arrow_carousel.svg");
+  background-repeat:no-repeat;
   right: 0;
 }
 
