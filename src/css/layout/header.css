@@ -28,6 +28,7 @@
         height:auto; 
     }
     
+
     
     .menu { 
         position: fixed;
@@ -62,6 +63,11 @@
         padding-top:10px
     }
 
+    .menu hr {
+        opacity:40%;
+        color:white
+    }
+
     .menu_section_jaune {  
         background-image: url("/public/img/yellow_menu_wave.svg");
         background-repeat:no-repeat;
@@ -71,10 +77,24 @@
         display:block;
     }  
     .menu_section_jaune ul , .menu_section_jaune a  {  
-        font-family: initial !important;
-        font-size: initial !important;
-        padding-top:20px
+        font-size: 20px;
+        padding-top:20px;
     }
+
+    .menu_jaune_option 
+    {
+        padding-left:10%;
+        position:relative;
+        bottom:3%
+    }
+
+    .glossaire {
+        position:absolute;
+        right: 0;
+        padding-right: 10%;
+        bottom:13px
+    }
+
 
     .menu--open {
         visibility:visible;

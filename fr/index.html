@@ -17,7 +17,7 @@
 
     <header class="header">
       <div class="headertext">  The flow of Time </div>
-        <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
+      <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
           <img src="/public/icons/menu_icon.webp" alt="Icone cliquable pour accéder au menu">
         </button> 
       </div>
@@ -30,6 +30,7 @@
     <nav id="mainNav"  
         class="menu" :class="menuIsOpen && 'menu--open'"
     >
+    <div class="menu_article">
       <ul>
         <li>
             <img src="/public/icons/Accueil_icon.svg" alt="Icone d'acceuil" >
@@ -66,7 +67,7 @@
             <a href="La_notion_du_temps.html">La notion du temps</a>
           </li>
         </ul>
-
+      </div>
           <div class="menu_section_jaune">
               <ul>
                 <li>
@@ -80,10 +81,14 @@
                 <li>
                 <a href="A_propos.html"> • À PROPOS</a>
                 </li>
+                <hr>
               </ul>
+              
+              <div class="menu_jaune_option">
                   <a href="../eng/index.html" onclick="document.cookie = 'nf_lang=eng; path=/'"><img src="/public/icons/ENG_icon.svg" alt="Icone cliquable pour changer la langue en anglais" ></a>
                   <a href="../fr/index.html" onclick="document.cookie = 'nf_lang=fr; path=/'"><img src="/public/icons/FR_icon.svg" alt="Icone cliquable pour changer la langue en français"></a>
-                  <a href="Glossaire.html">   GLOSSAIRE </a>
+                  <a href="Glossaire.html" class="glossaire">   GLOSSAIRE </a>
+              </div>
         </div>
     </div>
    </nav>
