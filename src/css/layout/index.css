@@ -23,6 +23,10 @@ body#home {
   padding-top: 30px;
 }
 
+.index_picture:first-child {
+  width: 70%;
+}
+
 .index_picture p {
   font-family: var(--main-page-subtitles);
   font-family: 'Bellota';
@@ -33,7 +37,8 @@ body#home {
 
 .subtitle_wave{
   padding-left: 3rem;
-  padding-top: 12px
+  padding-top: 12px;
+  width: 45%;
 }
 
 
@@ -73,7 +78,6 @@ scroll-snap-align: start;
     border-radius: 50%;
     margin-left:25px;
     margin-right:25px
-    
   }
 
 
@@ -194,5 +198,4 @@ scroll-snap-align: start;
       height: 370px;
     }
   }
-
 
