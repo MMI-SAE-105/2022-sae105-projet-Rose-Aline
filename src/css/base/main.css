@@ -9,13 +9,43 @@
 
 body#article {
   font-family: var(--article--regular);
-  background: radial-gradient(var(--white), var(--dark-grey))
+  background: radial-gradient(var(--white), var(--dark-grey));
+  display:grid
 }
 
-h1 {
+#article p, #article h1 , #article h2, #article h3 {  
+  padding-left:2.2rem;
+  padding-right:2.2rem;
+  padding-top:1rem;
+}
+
+.mot_glossaire {
+  color: var(--dark-yellow)
+}
+
+#article p{
+  font-size:18px
+}
+
+#article h1 {
   font-family: var(--big-article-title); color:var(--light-blue)
 }
 
-h2 {
-  font-family: var(--intertitre); color:var(--yellow)
+#article h2 {
+  font-family: var(--intertitre); color:var(--red)
 }
+
+#article h3{
+  font-size: 11px;
+  opacity:0.6
+}
+
+.chapo
+{
+  background-color: var(--red);
+  margin-left:2.2rem;
+  margin-right:2.2rem;
+  color: var(--light-text);
+  border-radius: 20px
+}
+
