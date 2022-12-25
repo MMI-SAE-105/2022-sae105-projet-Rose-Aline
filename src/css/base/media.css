@@ -1,16 +1,9 @@
 img {
     max-width: 100%;
     height: auto;
-    
   }
-  
-  figure {
-    margin: 0;
+
+  #article img {
+    margin-right:auto;
+    margin-left:auto  
   }
-  
-  figcaption {
-    font-size: var(--text-xs);
-    color: var(--gray-600);
-  }
-  
-  
