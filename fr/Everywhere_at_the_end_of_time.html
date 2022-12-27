@@ -98,30 +98,33 @@
     <!-- Debut article-->
     <div class="main_article">
         <h1>Le bal vers la fin</h1>
-            <div class="chapo">
-                <p>Le projet <b>Everywhere at the end of time de The Caretaker</b> est une énigme musicale. Ce voyage vers l’oubli nous fait perdre la mémoire et nos repères. </p>  
-          <audio class="audio"><source src="/public/audio/All_that_follows_is_true.mp3"></audio>
+      <div class="chapo">
+          <p>Le projet <b>Everywhere at the end of time de The Caretaker</b> est une énigme musicale. Ce voyage vers l’oubli nous fait perdre la mémoire et nos repères. </p>  
+          <audio id="audio">
+            <source src="/public/audio/All_that_follows_is_true.mp3">
+          </audio>
           <button id="playPauseBTN" onclick="playPause()" alt="Bouton cliquable pour jouer la musique"><img src="/public/icons/Volume.svg"> ÉCOUTER </button>
-    </div>
             <!-- Audio-->
                   <script>
                         var audio = document.getElementById('audio')
-                        var playPauseBTN = document.getElementById('playPause')
-                          var count= 0; 
+                        var playPauseBTN = document.getElementById('playPauseBTN')
+                        var count= 0; 
 
                           function playPause(){
                           if(count == 0){
                           count = 1;
+                          audio_2.pause();
                           audio.play();
                           }else{
                           count = 0;
                           audio.pause();
                         }
-                      }                            
+                      }                     
                 </script>
             <!-- Fin Audio-->
+      </div>
 
-          <img src="/public/img/Everywhere_at_the_end_of_time.webp" alt="Image de la couverture de l'album Everywhere at the end of time" class="image_chapo">
+          <img src="/public/img/Everywhere_at_the_end_of_time.webp" alt="Image de la couverture de l'album Everywhere at the end of time" id="image_chapo">
             
 
         <p>
@@ -147,19 +150,44 @@
             Il utilise notamment des bandes sonores des années 1930 et 1940 qu’il va retravailler.
         </p>
 
-        <img src="/public/img/The_shining.webp" alt="Image de la scène de ball dans The Shining" class="Image_article">
+        <img src="/public/img/The_shining.webp" alt="Image de la scène de ball dans The Shining" class="Image_article" id="red">
         <h3>Scène du bal du film The Shining</h3>
 
         <h2>Entre souvenir et oubli</h2>
         <p>
             All that follows is true est un des morceaux qui débute l'album.
             C’est l'une des compositions les plus puissantes. 
-            En effet, elle marque la transition entre la première et la deuxième étape vers l’oubli et la folie. 
+            En effet, elle marque la transition entre la première et la deuxième étape vers l’oubli et la folie.
+        </p> 
+        <p>
             L'artiste a mixé la douceur d’une musique nostalgique, celle de <a href="https://en.wikipedia.org/wiki/Maurice_Winnick">Maurice Winnick</a> ( It Looks Like Rain In Cherry Blossom Lane -1932) et des bruits parasites, des répétitions, des ruptures. 
             Ce mélange crée un sentiment de malaise tout en gardant l’aspect calme et rassurant de la nostalgie. 
         </p>
 
-        <img src="/public/img/It_looks_like_rain_in_cherry_blossom_lane.webp" alt="Image de la musique it looks like rain in cherry blossom lane" class="Image_article">
+        <audio id="audio_2">
+          <source src="/public/audio/it_looks_like_rain_in_cherry_blossom_lane.mp3">
+        </audio>
+        <button id="playPauseBTN_2" onclick="playPause_2()" alt="Bouton cliquable pour jouer la musique"><img src="/public/icons/Volume.svg"> ÉCOUTER </button>
+          <!-- Audio-->
+                <script>
+                        var audio_2 = document.getElementById('audio_2')
+                        var playPauseBTN = document.getElementById('playPauseBTN_2')
+                        var count= 0; 
+                          function playPause_2(){
+                          if(count == 0){
+                          count = 1;
+                          audio.pause();
+                          audio_2.play();
+                        }else{
+                          count = 0;
+                          audio_2.pause();
+                        } 
+                      }        
+                                          
+              </script>
+          <!-- Fin Audio-->
+          
+        <img src="/public/img/It_looks_like_rain_in_cherry_blossom_lane.webp" alt="Image de la musique it looks like rain in cherry blossom lane" class="Image_article" id="image_musique">
         <h3>Disque de la musique It looks like rain in cherry blossom lane</h3>
 
         <p> 
@@ -170,5 +198,28 @@
     </div>
 
       <!-- Fin article -->
+
+      
+  <!-- Footer-->
+
+  
+  <footer> 
+    <div class="footer_main"> 
+        <div class="footer_text"> 
+            <p>Aline ROSE MMI 1 - C1</p>
+            <a href="mailto:alinerose262003@gmail.com"> alinerose262003@gmail.com </a>
+              <div class="footer_icon"> 
+                  <p>Projet réalisé dans le cadre d’un exercice
+                  pédagogique au
+                  <a href="http://mmimontbeliard.com/contact"> département MMI de Montbéliard </a></p>
+                  <img src="/public/icons/logo_MMI.svg" alt="Logo du site du département MMI de Montbéliard">
+              </div>
+        </div>
+     </div>
+  </footer>
+
+<!-- Fin Footer-->
+
+
 
 </body>
