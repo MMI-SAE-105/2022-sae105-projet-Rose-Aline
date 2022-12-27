@@ -8,16 +8,21 @@
 }
 
 html{  
-  scroll-behavior: smooth
+  scroll-behavior: smooth;
 }
 
 body#article {
   font-family: var(--article--regular);
   background: radial-gradient(var(--white), var(--dark-grey));
   display:grid;
+  
+}
+.main_article {
+  padding-top:6rem
+
 }
 
-#article p, #article h1 , #article h2, #article h3 {  
+#article p, .main_article h1 , .main_article h2, .main_article h3 {  
   padding-left:2.2rem;
   padding-right:2.2rem;
   padding-top:1rem;
@@ -27,19 +32,19 @@ body#article {
   color: var(--dark-yellow)
 }
 
-#article p{
+.main_article p{
   font-size:18px
 }
 
-#article h1 {
+.main_article h1 {
   font-family: var(--big-article-title); color:var(--light-blue)
 }
 
-#article h2 {
-  font-family: var(--intertitre); color:var(--red)
+.main_article h2 {
+  font-family: var(--intertitre); color:var(--red);
 }
 
-#article h3{
+.main_article h3{
   font-size: 11px;
   opacity:0.6
 }
@@ -50,6 +55,24 @@ body#article {
   margin-left:2.2rem;
   margin-right:2.2rem;
   color: var(--light-text);
-  border-radius: 20px
+  border-radius: 20px;
+  padding-bottom: 10px;
 }
 
+
+#playPauseBTN {
+  background-color: var(--light-blue);
+  border: none;
+  padding-left:10px;
+  padding-right:30px;
+  padding-top:1px;
+  padding-bottom:1px;
+  display: flex;
+  gap:10px;
+  align-items: center;   
+  border-radius: 5px;
+  font-size:20px;
+  color: var(--light-text);
+  margin-top:10px;
+  margin-left:40px;
+}

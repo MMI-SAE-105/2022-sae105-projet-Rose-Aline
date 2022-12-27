@@ -1,15 +1,19 @@
-img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  #article img {
+.main_article img {
     margin-right:auto;
     margin-left:auto  
   }
+
+  .Image_article {
+display:block  }
 
   .top {
   margin-top: calc(100vh + var(--offset));
   }
 
-  
+  #image_chapo{
+    position:relative;
+    margin-right:2.1rem;
+    margin-left: auto;
+    display:block;
+    bottom:35px
+  }

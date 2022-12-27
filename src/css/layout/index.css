@@ -85,12 +85,14 @@ scroll-snap-align: start;
   background-image: url("/public/icons/left_arrow_carousel.svg");
   background-repeat:no-repeat;
   left: 0;
+  border: none;
 }
 
 .carrousel_btn-apres {
   background-image: url("/public/icons/right_arrow_carousel.svg");
   background-repeat:no-repeat;
   right: 0;
+  border: none;
 }
 
 .carrousel_ecran figure {
@@ -198,4 +200,3 @@ scroll-snap-align: start;
       height: 370px;
     }
   }
-

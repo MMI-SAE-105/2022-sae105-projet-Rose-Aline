@@ -1,3 +1,5 @@
+  
+
 .header {
     background: var(--light-blue);
     height:80px;
@@ -5,11 +7,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
     z-index:3;
-    position:relative
     }
     
+        #home .header { 
+            position:relative 
+        }
+
+        #article .header 
+        {
+            position:fixed
+        }
 
 .headertext {
     font-family: var(--intertitre); 
@@ -25,7 +36,7 @@
     z-index:3;
 }
 
-    button {
+.header button {
         background: transparent;
         border: none !important;
         font-size:0;
@@ -110,7 +121,7 @@ a {
     text-decoration: none;
     font-family: 'Arvo'
 }
-a:hover {
+.menu_article a:hover {
     opacity: 0.7;
 }
   
