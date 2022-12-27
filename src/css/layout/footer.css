@@ -35,7 +35,7 @@ footer
     align-items: center;
 }
 
-footer img {
+#home footer img {
 width:46px;
 height:auto;
 margin-bottom:10px
@@ -43,4 +43,13 @@ margin-bottom:10px
 
 footer a {
 text-decoration: underline;
+}
+
+#article footer {
+    margin-top:70px;
+}
+
+#article .footer_main {
+    background-size: cover;        
+    padding-bottom:10px;
 }

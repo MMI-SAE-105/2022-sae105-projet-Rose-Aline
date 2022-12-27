@@ -4,16 +4,23 @@
   }
 
   .Image_article {
-display:block  }
-
-  .top {
-  margin-top: calc(100vh + var(--offset));
-  }
+display:block;
+max-width: 100%;
+height: auto;
+margin-top:2rem
+}
 
   #image_chapo{
     position:relative;
     margin-right:2.1rem;
     margin-left: auto;
     display:block;
-    bottom:35px
+    bottom:35px;
+   z-index:0
   }
+
+#red {
+  box-shadow: 15px -15px var(--red);
+  border-radius : 20px;
+  margin-top:10px
+}

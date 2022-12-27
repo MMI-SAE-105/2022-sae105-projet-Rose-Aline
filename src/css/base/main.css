@@ -13,7 +13,7 @@ html{
 
 body#article {
   font-family: var(--article--regular);
-  background: radial-gradient(var(--white), var(--dark-grey));
+  background: linear-gradient(var(--white), #C8D2D9);
   display:grid;
   
 }
@@ -22,7 +22,7 @@ body#article {
 
 }
 
-#article p, .main_article h1 , .main_article h2, .main_article h3 {  
+.main_article p, .main_article h1 , .main_article h2, .main_article h3 {  
   padding-left:2.2rem;
   padding-right:2.2rem;
   padding-top:1rem;
@@ -32,21 +32,25 @@ body#article {
   color: var(--dark-yellow)
 }
 
-.main_article p{
-  font-size:18px
+.main_article p:not(:first-child){
+  font-size:4.7vw;
 }
 
 .main_article h1 {
-  font-family: var(--big-article-title); color:var(--light-blue)
+  font-family: var(--big-article-title); color:var(--light-blue);
+  font-size: 8.4vw;
 }
 
 .main_article h2 {
   font-family: var(--intertitre); color:var(--red);
+  font-size: 6vw;
+  margin-top:30px
 }
 
 .main_article h3{
-  font-size: 11px;
-  opacity:0.6
+  font-size: 3vw;
+  opacity:0.6;
+  margin-top:-5px
 }
 
 .chapo
@@ -57,10 +61,11 @@ body#article {
   color: var(--light-text);
   border-radius: 20px;
   padding-bottom: 10px;
+  font-size:4.7vw;
 }
 
 
-#playPauseBTN {
+#playPauseBTN, #playPauseBTN_2 {
   background-color: var(--light-blue);
   border: none;
   padding-left:10px;
@@ -71,8 +76,21 @@ body#article {
   gap:10px;
   align-items: center;   
   border-radius: 5px;
-  font-size:20px;
+  font-size:5.5vw;
   color: var(--light-text);
   margin-top:10px;
   margin-left:40px;
+  z-index:1; 
+  position:relative
 }
+
+#playPauseBTN_2 {
+  top:45px;
+  left:10px
+}
+
+
+.top {
+  display: flex;
+  padding-left: 200px;
+ }

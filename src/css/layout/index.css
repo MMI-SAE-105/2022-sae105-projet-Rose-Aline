@@ -200,3 +200,8 @@ scroll-snap-align: start;
       height: 370px;
     }
   }
+
+  .carrousel_ecran a{
+    text-decoration: none ;
+    
+}
