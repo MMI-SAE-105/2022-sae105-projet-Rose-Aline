@@ -1,16 +1,99 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{menuIsOpen: false}" :class=""{noscroll:menuIsOpen,}>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matin brun</title>   
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matin brun - The Flow of Time</title>
+  <link rel="stylesheet" href="/src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+
 </head>
 
-<body>
-    
-    <h1>On aurait dû dire non </h1>
+<body id="article">
+  <!-- Header-->
+
+  <header class="header">
+    <a href="index.html" class="headertext"> The flow of Time</a>
+    <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
+        <img src="/public/icons/menu_icon.webp" alt="Icone cliquable pour accéder au menu">
+      </button> 
+    </div>
+  </header>
+  <!-- Fin Header-->
+
+
+  <!-- Menu -->
+
+  <nav id="mainNav"  
+      class="menu" :class="menuIsOpen && 'menu--open'"
+  >
+    <ul>
+      <li>
+          <img src="/public/icons/Accueil_icon.svg" alt="Icone d'acceuil" >
+          <a href="index.html">Accueil</a>
+        </li>
+
+        <li>
+          <img src="/public/icons/icon_music.svg" alt="Icone musique">
+          <a href="Everywhere_at_the_end_of_time.html">Everywhere at the end of time</a>
+        </li>
+          
+        <li>
+          <img src="/public/icons/icon_movie.svg" alt="Icone film">
+          <a href="Triplettes_de_Belleville.html">Les triplettes de Belleville</a>
+        </li>
+
+        <li>
+          <img src="/public/icons/icon_book.svg" alt="Icone livre">
+          <a href="Matin_brun.html">Matin brun</a>
+        </li>
+
+        <li>
+          <img src="/public/icons/icon_location.svg" alt="Icone lieu">
+          <a href="Deep_Dive_Dubai.html">Deep Dive Dubai</a>
+        </li>
+
+        <li>
+          <img src="/public/icons/icon_hope.svg" alt="Icone espoir">
+          <a href="Teletravail.html">Télétravail</a>
+        </li>
+          
+        <li>
+          <img src="/public/icons/icon_regret.svg" alt="Icone regret">
+          <a href="La_notion_du_temps.html">La notion du temps</a>
+        </li>
+      </ul>
+    </div>
+        <div class="menu_section_jaune">
+            <ul>
+              <li>
+                <a href="Contact.html">• CONTACT</a>
+              </li>
+
+              <li>
+                <a href="Autres_Projets.html">• AUTRES PROJETS </a>
+              </li>
+                
+              <li>
+              <a href="A_propos.html"> • À PROPOS</a>
+              </li>
+              <hr>
+            </ul>
+            
+            <div class="menu_jaune_option">
+                <a href="../eng/index.html" onclick="document.cookie = 'nf_lang=eng; path=/'"><img src="/public/icons/ENG_icon.svg" alt="Icone cliquable pour changer la langue en anglais" ></a>
+                <a href="../fr/index.html" onclick="document.cookie = 'nf_lang=fr; path=/'"><img src="/public/icons/FR_icon.svg" alt="Icone cliquable pour changer la langue en français"></a>
+                <a href="Glossaire.html" class="glossaire">   GLOSSAIRE </a>
+            </div>
+      </div>
+  </div>
+  </nav>
+
+  <!-- Fin menu-->
+
+  <h1>On aurait dû dire non </h1>
 
     <img src="/public/img/Book_cover.webp" alt="Image de la couverture du livre 'Matin Brun">
     Au travers des discussions banales et quotidiennes de 2 amis, on voit se développer une dictature qui va broyer leur vie. Cette nouvelle nous rappelle qu’il est facile de détourner le regard et qu’il est dangereux de se réveiller trop tard.

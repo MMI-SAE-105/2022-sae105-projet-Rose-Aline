@@ -15,14 +15,14 @@ body#article {
   font-family: var(--article--regular);
   background: linear-gradient(var(--white), #C8D2D9);
   display:grid;
-  
 }
+
 .main_article {
   padding-top:6rem
 
 }
 
-.main_article p, .main_article h1 , .main_article h2, .main_article h3 {  
+.article_text p, .main_article h1 , .main_article h2, .main_article h3 {  
   padding-left:2.2rem;
   padding-right:2.2rem;
   padding-top:1rem;
@@ -32,25 +32,44 @@ body#article {
   color: var(--dark-yellow)
 }
 
-.main_article p:not(:first-child){
-  font-size:4.7vw;
+.main_article p{
+  font-family: 'Ubuntu';
+}
+
+.main_article b{
+  font-family: 'Ubuntu';
+  font-weight: medium;}
+
+  .article_text p{
+  color: var(--black-text);
+  font-size: var(--article--regular)
 }
 
 .main_article h1 {
   font-family: var(--big-article-title); color:var(--light-blue);
-  font-size: 8.4vw;
+  font-family: 'Arvo';
+  font-size: var(--big-article-title);
+  margin-bottom:10px;
+  padding-right:40px
 }
 
 .main_article h2 {
   font-family: var(--intertitre); color:var(--red);
-  font-size: 6vw;
-  margin-top:30px
+  margin-top:30px;
+  font-family: 'Arvo';
+  font-size: var(--intertitre)
 }
 
 .main_article h3{
-  font-size: 3vw;
   opacity:0.6;
-  margin-top:-5px
+  margin-top:-5px;
+  font-family: 'Ubuntu';
+  font-size: var(--image-description);
+  font-weight: var(--image-description)
+}
+
+.main_article a{
+  color: var(--black-text)
 }
 
 .chapo
@@ -61,9 +80,11 @@ body#article {
   color: var(--light-text);
   border-radius: 20px;
   padding-bottom: 10px;
-  font-size:4.7vw;
+  font-size: var(--chapo-bold);
+  padding-left:1rem;
+  padding-right:1.2rem;
+  padding-top:1rem;
 }
-
 
 #playPauseBTN, #playPauseBTN_2 {
   background-color: var(--light-blue);
@@ -76,12 +97,13 @@ body#article {
   gap:10px;
   align-items: center;   
   border-radius: 5px;
-  font-size:5.5vw;
   color: var(--light-text);
   margin-top:10px;
   margin-left:40px;
   z-index:1; 
-  position:relative
+  position:relative;
+  font-family: 'Bellota';
+  font-size: var(--button--article)
 }
 
 #playPauseBTN_2 {
@@ -89,8 +111,9 @@ body#article {
   left:10px
 }
 
-
 .top {
   display: flex;
   padding-left: 200px;
  }
+
+

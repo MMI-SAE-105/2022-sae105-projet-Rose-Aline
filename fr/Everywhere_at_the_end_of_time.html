@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Flow of Time</title>
+  <title>Everywhere at the end of time - The Flow of Time</title>
   <link rel="stylesheet" href="/src/css/style.css">
     <script defer src="https://unpkg.com/alpinejs"></script>
 
@@ -30,7 +30,6 @@
     <nav id="mainNav"  
         class="menu" :class="menuIsOpen && 'menu--open'"
     >
-    <div class="menu_article">
       <ul>
         <li>
             <img src="/public/icons/Accueil_icon.svg" alt="Icone d'acceuil" >
@@ -123,80 +122,79 @@
                 </script>
             <!-- Fin Audio-->
       </div>
+      <div class = "article_text">
 
-          <img src="/public/img/Everywhere_at_the_end_of_time.webp" alt="Image de la couverture de l'album Everywhere at the end of time" id="image_chapo">
+            <img src="/public/img/Everywhere_at_the_end_of_time.webp" alt="Image de la couverture de l'album Everywhere at the end of time" id="image_chapo">
+              
+
+          <p>
+              Le temps nous file entre les doigts.
+              Parfois, le passé nous poursuit. Le présent nous échappe et le futur nous angoisse. 
+              C’est dans un labyrinthe du temps que nous entraîne 
+              <a href="https://leylandkirby.bandcamp.com/">Leyland Kirby</a>
+              avec son album <i>Everywhere at The End of Time.</i></p>        
+          <p> Sous le nom de The Caretaker, ce compositeur britannique a créé une œuvre hors du temps qui s’étale sur six parties sorties entre 2016 et 2019.  
+              Ainsi, le projet représente 6 heures et demi d’écoute au total et mélange expérimentations sonores, collages et <span class="mot_glossaire">musique noise.</span>
+              <a href="Glossaire.html"> <img src="/public/icons/i_info.svg" alt="Icone cliquable pour accéder au glossaire et la définition de 'musique noise'"></a> 
+          </p> 
+          <img src="/public/img/Everywhere_at_the_end_of_time_covers.webp" alt="Image des illustrations de l'album Everywhere at the end of time" class="Image_article">
+          <h3>Peintures réalisé par Ivan Seal illustrant chaques épisodes de
+          Everywhere at the End of Time</h3>
+
+          <h2>La nostalgie des années 30</h2>
+          <p>
+              A la fois dans le contenu et la forme, cet album aborde <b>le thème du temps et la détérioration de la mémoire</b> jusqu’à la destruction complète de soi-même. 
+              Inspiré par la scène du bal hanté du film <a href="https://youtu.be/5Cb3ik6zP2I">The Shining</a> de <a href="https://kubrick.life/">Stanley Kubrick</a>, Leyland Kirby va faire revivre une dernière fois les mémoires de fantômes du passé. 
+              Il utilise notamment des bandes sonores des années 1930 et 1940 qu’il va retravailler.
+          </p>
+
+          <img src="/public/img/The_shining.webp" alt="Image de la scène de ball dans The Shining" class="Image_article" id="red">
+          <h3>Scène du bal du film The Shining</h3>
+
+          <h2>Entre souvenir et oubli</h2>
+          <p>
+              All that follows is true est un des morceaux qui débute l'album.
+              C’est l'une des compositions les plus puissantes. 
+              En effet, elle marque la transition entre la première et la deuxième étape vers l’oubli et la folie.
+          </p> 
+          <p>
+              L'artiste a mixé la douceur d’une musique nostalgique, celle de <a href="https://en.wikipedia.org/wiki/Maurice_Winnick">Maurice Winnick</a> ( It Looks Like Rain In Cherry Blossom Lane -1932) et des bruits parasites, des répétitions, des ruptures. 
+              Ce mélange crée un sentiment de malaise tout en gardant l’aspect calme et rassurant de la nostalgie. 
+          </p>
+
+          <audio id="audio_2">
+            <source src="/public/audio/it_looks_like_rain_in_cherry_blossom_lane.mp3">
+          </audio>
+          <button id="playPauseBTN_2" onclick="playPause_2()" alt="Bouton cliquable pour jouer la musique"><img src="/public/icons/Volume.svg"> ÉCOUTER </button>
+            <!-- Audio-->
+                  <script>
+                          var audio_2 = document.getElementById('audio_2')
+                          var playPauseBTN = document.getElementById('playPauseBTN_2')
+                          var count= 0; 
+                            function playPause_2(){
+                            if(count == 0){
+                            count = 1;
+                            audio.pause();
+                            audio_2.play();
+                          }else{
+                            count = 0;
+                            audio_2.pause();
+                          } 
+                        }        
+                                            
+                </script>
+            <!-- Fin Audio-->
             
+          <img src="/public/img/It_looks_like_rain_in_cherry_blossom_lane.webp" alt="Image de la musique it looks like rain in cherry blossom lane" class="Image_article">
+          <h3>Disque de la musique It looks like rain in cherry blossom lane</h3>
 
-        <p>
-            Le temps nous file entre les doigts.
-            Parfois, le passé nous poursuit. Le présent nous échappe et le futur nous angoisse. 
-            C’est dans un labyrinthe du temps que nous entraîne 
-            <a href="https://leylandkirby.bandcamp.com/">Leyland Kirby</a>
-            avec son album <i>Everywhere at The End of Time.</i></p>
-            
-        <p> Sous le nom de The Caretaker, ce compositeur britannique a créé une œuvre hors du temps qui s’étale sur six parties sorties entre 2016 et 2019.  
-            Ainsi, le projet représente 6 heures et demi d’écoute au total et mélange expérimentations sonores, collages et <span class="mot_glossaire">musique noise.</span>
-            <a href="Glossaire.html"> <img src="/public/icons/i_info.svg" alt="Icone cliquable pour accéder au glossaire et la définition de 'musique noise'"></a> 
-        </p> 
+          <p> 
+              <b>Leyland Kirby donne naissance à une musique qui est à la fois familière et inconnue.</b> Il nous emmène à la frontière entre le souvenir et l’oubli. 
+          </p>
 
-        <img src="/public/img/Everywhere_at_the_end_of_time_covers.webp" alt="Image des illustrations de l'album Everywhere at the end of time" class="Image_article">
-        <h3>Peintures réalisé par Ivan Seal illustrant chaques épisodes de
-        Everywhere at the End of Time</h3>
-
-        <h2>La nostalgie des années 30</h2>
-        <p>
-            A la fois dans le contenu et la forme, cet album aborde <b>le thème du temps et la détérioration de la mémoire</b> jusqu’à la destruction complète de soi-même. 
-            Inspiré par la scène du bal hanté du film <a href="https://youtu.be/5Cb3ik6zP2I">The Shining</a> de <a href="https://kubrick.life/">Stanley Kubrick</a>, Leyland Kirby va faire revivre une dernière fois les mémoires de fantômes du passé. 
-            Il utilise notamment des bandes sonores des années 1930 et 1940 qu’il va retravailler.
-        </p>
-
-        <img src="/public/img/The_shining.webp" alt="Image de la scène de ball dans The Shining" class="Image_article" id="red">
-        <h3>Scène du bal du film The Shining</h3>
-
-        <h2>Entre souvenir et oubli</h2>
-        <p>
-            All that follows is true est un des morceaux qui débute l'album.
-            C’est l'une des compositions les plus puissantes. 
-            En effet, elle marque la transition entre la première et la deuxième étape vers l’oubli et la folie.
-        </p> 
-        <p>
-            L'artiste a mixé la douceur d’une musique nostalgique, celle de <a href="https://en.wikipedia.org/wiki/Maurice_Winnick">Maurice Winnick</a> ( It Looks Like Rain In Cherry Blossom Lane -1932) et des bruits parasites, des répétitions, des ruptures. 
-            Ce mélange crée un sentiment de malaise tout en gardant l’aspect calme et rassurant de la nostalgie. 
-        </p>
-
-        <audio id="audio_2">
-          <source src="/public/audio/it_looks_like_rain_in_cherry_blossom_lane.mp3">
-        </audio>
-        <button id="playPauseBTN_2" onclick="playPause_2()" alt="Bouton cliquable pour jouer la musique"><img src="/public/icons/Volume.svg"> ÉCOUTER </button>
-          <!-- Audio-->
-                <script>
-                        var audio_2 = document.getElementById('audio_2')
-                        var playPauseBTN = document.getElementById('playPauseBTN_2')
-                        var count= 0; 
-                          function playPause_2(){
-                          if(count == 0){
-                          count = 1;
-                          audio.pause();
-                          audio_2.play();
-                        }else{
-                          count = 0;
-                          audio_2.pause();
-                        } 
-                      }        
-                                          
-              </script>
-          <!-- Fin Audio-->
-          
-        <img src="/public/img/It_looks_like_rain_in_cherry_blossom_lane.webp" alt="Image de la musique it looks like rain in cherry blossom lane" class="Image_article" id="image_musique">
-        <h3>Disque de la musique It looks like rain in cherry blossom lane</h3>
-
-        <p> 
-            <b>Leyland Kirby donne naissance à une musique qui est à la fois familière et inconnue.</b> Il nous emmène à la frontière entre le souvenir et l’oubli. 
-        </p>
-
-        <a href="#" class="top"><img src="/public/icons/button_scroll_up.svg" alt="bouton cliquable pour retourner en haut de la page"></a>
+          <a href="#" class="top"><img src="/public/icons/button_scroll_up.svg" alt="bouton cliquable pour retourner en haut de la page"></a>
+      </div>
     </div>
-
       <!-- Fin article -->
 
       

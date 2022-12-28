@@ -79,7 +79,7 @@
 
     .menu hr {
         opacity:40%;
-        color:white
+        color: var(--light-text)
     }
 
     .menu_section_jaune {  
