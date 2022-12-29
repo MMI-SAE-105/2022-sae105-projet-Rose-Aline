@@ -12,130 +12,165 @@
 </head>
 
 <body id="article">
+
   <!-- Header-->
 
-  <header class="header">
-    <a href="index.html" class="headertext"> The flow of Time</a>
-    <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
-        <img src="/public/icons/menu_icon.webp" alt="Icone cliquable pour accéder au menu">
-      </button> 
-    </div>
-  </header>
+    <header class="header">
+      <a href="index.html" class="headertext"> The flow of Time</a>
+      <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
+          <img src="/public/icons/menu_icon.webp" alt="Icone cliquable pour accéder au menu">
+        </button> 
+      </div>
+    </header>
   <!-- Fin Header-->
 
 
   <!-- Menu -->
 
-  <nav id="mainNav"  
-      class="menu" :class="menuIsOpen && 'menu--open'"
-  >
-    <ul>
-      <li>
-          <img src="/public/icons/Accueil_icon.svg" alt="Icone d'acceuil" >
-          <a href="index.html">Accueil</a>
-        </li>
+    <nav id="mainNav"  
+        class="menu" :class="menuIsOpen && 'menu--open'"
+    >
+      <ul>
+        <li>
+            <img src="/public/icons/Accueil_icon.svg" alt="Icone d'acceuil" >
+            <a href="index.html">Accueil</a>
+          </li>
 
-        <li>
-          <img src="/public/icons/icon_music.svg" alt="Icone musique">
-          <a href="Everywhere_at_the_end_of_time.html">Everywhere at the end of time</a>
-        </li>
-          
-        <li>
-          <img src="/public/icons/icon_movie.svg" alt="Icone film">
-          <a href="Triplettes_de_Belleville.html">Les triplettes de Belleville</a>
-        </li>
-
-        <li>
-          <img src="/public/icons/icon_book.svg" alt="Icone livre">
-          <a href="Matin_brun.html">Matin brun</a>
-        </li>
-
-        <li>
-          <img src="/public/icons/icon_location.svg" alt="Icone lieu">
-          <a href="Deep_Dive_Dubai.html">Deep Dive Dubai</a>
-        </li>
-
-        <li>
-          <img src="/public/icons/icon_hope.svg" alt="Icone espoir">
-          <a href="Teletravail.html">Télétravail</a>
-        </li>
-          
-        <li>
-          <img src="/public/icons/icon_regret.svg" alt="Icone regret">
-          <a href="La_notion_du_temps.html">La notion du temps</a>
-        </li>
-      </ul>
-    </div>
-        <div class="menu_section_jaune">
-            <ul>
-              <li>
-                <a href="Contact.html">• CONTACT</a>
-              </li>
-
-              <li>
-                <a href="Autres_Projets.html">• AUTRES PROJETS </a>
-              </li>
-                
-              <li>
-              <a href="A_propos.html"> • À PROPOS</a>
-              </li>
-              <hr>
-            </ul>
+          <li>
+            <img src="/public/icons/icon_music.svg" alt="Icone musique">
+            <a href="Everywhere_at_the_end_of_time.html">Everywhere at the end of time</a>
+          </li>
             
-            <div class="menu_jaune_option">
-                <a href="../eng/index.html" onclick="document.cookie = 'nf_lang=eng; path=/'"><img src="/public/icons/ENG_icon.svg" alt="Icone cliquable pour changer la langue en anglais" ></a>
-                <a href="../fr/index.html" onclick="document.cookie = 'nf_lang=fr; path=/'"><img src="/public/icons/FR_icon.svg" alt="Icone cliquable pour changer la langue en français"></a>
-                <a href="Glossaire.html" class="glossaire">   GLOSSAIRE </a>
-            </div>
+          <li>
+            <img src="/public/icons/icon_movie.svg" alt="Icone film">
+            <a href="Triplettes_de_Belleville.html">Les triplettes de Belleville</a>
+          </li>
+
+          <li>
+            <img src="/public/icons/icon_book.svg" alt="Icone livre">
+            <a href="Matin_brun.html">Matin brun</a>
+          </li>
+
+          <li>
+            <img src="/public/icons/icon_location.svg" alt="Icone lieu">
+            <a href="Deep_Dive_Dubai.html">Deep Dive Dubai</a>
+          </li>
+
+          <li>
+            <img src="/public/icons/icon_hope.svg" alt="Icone espoir">
+            <a href="Teletravail.html">Télétravail</a>
+          </li>
+            
+          <li>
+            <img src="/public/icons/icon_regret.svg" alt="Icone regret">
+            <a href="La_notion_du_temps.html">La notion du temps</a>
+          </li>
+        </ul>
       </div>
-  </div>
-  </nav>
+          <div class="menu_section_jaune">
+              <ul>
+                <li>
+                  <a href="Contact.html">• CONTACT</a>
+                </li>
+
+                <li>
+                  <a href="Autres_Projets.html">• AUTRES PROJETS </a>
+                </li>
+                  
+                <li>
+                <a href="A_propos.html"> • À PROPOS</a>
+                </li>
+                <hr>
+              </ul>
+              
+              <div class="menu_jaune_option">
+                  <a href="../eng/index.html" onclick="document.cookie = 'nf_lang=eng; path=/'"><img src="/public/icons/ENG_icon.svg" alt="Icone cliquable pour changer la langue en anglais" ></a>
+                  <a href="../fr/index.html" onclick="document.cookie = 'nf_lang=fr; path=/'"><img src="/public/icons/FR_icon.svg" alt="Icone cliquable pour changer la langue en français"></a>
+                  <a href="Glossaire.html" class="glossaire">   GLOSSAIRE </a>
+              </div>
+        </div>
+    </div>
+   </nav>
 
   <!-- Fin menu-->
-        
-    <h1>Le temps de ne rien faire</h1>
-    
-    <img src="/public/img/regret_image_(1).webp" alt="Image d'un sablier sur une table">
 
-    Toujours pressés, ultra connectés… 
-    <b>la génération des années 2000 a développé une autre notion du temps</b>
-    , mais est-ce le bon fuseau horaire pour construire son avenir ?
+  <!-- Debut article-->
+    <div class="main_article">
 
-    <p>
-        Nous sommes la Génération Z  
-        <a href="Glossaire.html"> <img src="/public/icons/i_info.svg" alt="Icone cliquable pour accéder au glossaire et la définition de 'Generation Z'"></a> 
-        , née avec le développement des moyens numériques : internet, smartphone. 
-        Z comme zapping, nous devons gérer des informations innombrables, des sollicitations constantes. 
-        En conséquence, nous savons tout naturellement lire nos notifications, consulter nos cours et écouter le dernier album de notre chanteur préféré en même temps.
-        <b>Aujourd’hui, une actualité en efface une autre.</b>
-        Une pandémie mondiale est presque oubliée quand survient un nouveau conflit, qui lui-même s'effacera derrière un autre buzz ou scandale.
-    </p>
-        
-    <img src="/public/img/regret_image_(2).webp" alt="Image d'une personne endormie près d'un sablier">
-        
-    <h2>Une société accélérée</h2>
+      <h1>Le temps de ne rien faire</h1>
+      <div class="chapo">
+
+        <p>Toujours pressés, ultra connectés… 
+        <b>la génération des années 2000 a développé une autre notion du temps</b>
+        , mais est-ce le bon fuseau horaire pour construire son avenir ?</p>
+      </div>
+          <img src="/public/img/regret_image_(1).webp" alt="Image d'un sablier sur une table" id="image_chapo">
+
+      <div class ="article_text">
         <p>
-            Globalement, la société qui nous entoure nous pousse à aller toujours vite, à décider maintenant et tout de suite.
-            Réussir notre concours, nos devoirs, notre future vie professionnelle… 
-            Cette avalanche d’objectifs en réalité nous empêche de prendre <b>le temps de ne rien faire. </b>
-            Le philosophe <a href="https://www.academie-francaise.fr/les-immortels/paul-valery">Paul Valéry</a> (1871 – 1945) écrivait « Nous ne supportons plus la durée.
-            Nous ne savons plus féconder l’ennui. 
-            Notre nature a horreur du vide, ce vide sur lequel les esprits de jadis savaient peindre les images de leurs idéaux, leurs idées… ».
-            <b>Le temps de ne rien faire n’existe plus. </b> 
-            La pression des réseaux sociaux écrase et englobe tout le temps libre.
-            On a toutefois plus souvent l'impression d'avoir perdu son temps !
+            Nous sommes la <span class="mot_glossaire">Génération Z</span>
+            <a href="Glossaire.html"> <img src="/public/icons/i_info.svg" alt="Icone cliquable pour accéder au glossaire et la définition de 'Generation Z'"></a> 
+            , née avec le développement des moyens numériques : internet, smartphone. 
+            Z comme zapping, nous devons gérer des informations innombrables, des sollicitations constantes. 
+            En conséquence, nous savons tout naturellement lire nos notifications, consulter nos cours et écouter le dernier album de notre chanteur préféré en même temps.
         </p>
-        
-    <img src="/public/img/regret_image_(3).webp" alt="Image d'une personne au regard ennuyée qui tient son telephone">
-        
-    <h2>Ne pas avancer au même rythme</h2>
         <p>
-            L’enfance peut paraître longue et ennuyeuse. 
-            Néanmoins, il ne sera plus possible après de retrouver ces temps de réflexion pour s’inventer un demain.
-            <b>Notre génération est pressée de grandir tout de suite</b> au risque de se sentir vieille avant l’heure avec cette désagréable impression de courir après le temps.
-            Nous voulons tout faire maintenant : réussir notre vie professionnelle, sociale, sauver la planète, révolutionner le futur...
-            Dans la mesure où on est plus lent que les autres, il peut parfois être difficile de suivre le rythme de la société et de ce fait de correspondre aux normes attendues.
-        </p>   
-        
-    <img src="/public/icons/button_scroll_up.svg" alt="bouton cliquable pour retourner en haut de la page">  
-</body>   
+            <b>Aujourd’hui, une actualité en efface une autre.</b>
+            Une pandémie mondiale est presque oubliée quand survient un nouveau conflit, qui lui-même s'effacera derrière un autre buzz ou scandale.
+        </p>
+            
+        <img src="/public/img/regret_image_(2).webp" alt="Image d'une personne endormie près d'un sablier" class="Image_article">
+            
+        <h2>Une société accélérée</h2>
+            <p>
+                Globalement, la société qui nous entoure nous pousse à aller toujours vite, à décider maintenant et tout de suite.
+                Réussir notre concours, nos devoirs, notre future vie professionnelle… 
+                Cette avalanche d’objectifs en réalité nous empêche de prendre <b>le temps de ne rien faire. </b>
+                Le philosophe <a href="https://www.academie-francaise.fr/les-immortels/paul-valery">Paul Valéry</a> (1871 – 1945) écrivait « Nous ne supportons plus la durée.
+                Nous ne savons plus féconder l’ennui. 
+                Notre nature a horreur du vide, ce vide sur lequel les esprits de jadis savaient peindre les images de leurs idéaux, leurs idées… ».
+            </p>
+            <p>
+                <b>Le temps de ne rien faire n’existe plus. </b> 
+                La pression des réseaux sociaux écrase et englobe tout le temps libre.
+                On a toutefois plus souvent l'impression d'avoir perdu son temps !
+            </p>
+            
+        <img src="/public/img/regret_image_(3).webp" alt="Image d'une personne au regard ennuyée qui tient son telephone" class="Image_article" id="red">
+            
+        <h2>Ne pas avancer au même rythme</h2>
+            <p>
+                L’enfance peut paraître longue et ennuyeuse. 
+                Néanmoins, il ne sera plus possible après de retrouver ces temps de réflexion pour s’inventer un demain.
+                <b>Notre génération est pressée de grandir tout de suite</b> au risque de se sentir vieille avant l’heure avec cette désagréable impression de courir après le temps.
+                Nous voulons tout faire maintenant : réussir notre vie professionnelle, sociale, sauver la planète, révolutionner le futur...
+            </p>
+            <p>
+                Dans la mesure où on est plus lent que les autres, il peut parfois être difficile de suivre le rythme de la société et de ce fait de correspondre aux normes attendues.
+            </p>   
+            
+          <a href="#" class="top"><img src="/public/icons/button_scroll_up.svg" alt="bouton cliquable pour retourner en haut de la page"></a> 
+      </div> 
+    </div>
+  <!-- Fin article-->
+
+      <!-- Footer-->
+
+      <footer> 
+        <div class="footer_main"> 
+            <div class="footer_text"> 
+                <p>Aline ROSE MMI 1 - C1</p>
+                <a href="mailto:alinerose262003@gmail.com"> alinerose262003@gmail.com </a>
+                  <div class="footer_icon"> 
+                      <p>Projet réalisé dans le cadre d’un exercice
+                      pédagogique au
+                      <a href="http://mmimontbeliard.com/contact"> département MMI de Montbéliard </a></p>
+                      <img src="/public/icons/logo_MMI.svg" alt="Logo du site du département MMI de Montbéliard">
+                  </div>
+            </div>
+        </div>
+      </footer>
+
+    <!-- Fin Footer-->
+
+  </body>   

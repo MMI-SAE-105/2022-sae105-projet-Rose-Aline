@@ -1,0 +1,19 @@
+
+.extrait_livre{
+    position:relative;
+    background-image: url("/public/img/red_wave_book.Webp");
+    background-repeat:no-repeat;
+    background-size: cover;        
+    padding-bottom:40px;
+    padding-top:50px;
+    top:40px;
+    z-index:0;
+  }
+
+  .extrait_livre,.extrait_livre h1 {
+    color: var(--light-text)
+  }
+
+  .extrait_livre p{
+    padding: 30px 30px 0px 30px
+}

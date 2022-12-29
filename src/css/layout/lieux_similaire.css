@@ -1,11 +1,13 @@
 
 .lieux_similaire{
+  position:relative;
   background-image: url("/public/img/yellow_menu_wave.svg");
   background-repeat:no-repeat;
   background-size: cover;        
-  padding-bottom:0px;
+  padding-bottom:40px;
   padding-top:50px;
-  z-index:-1;
+  top:40px;
+  z-index:0;
 }
 
 .lieux_similaire h1{
@@ -40,15 +42,14 @@
 .lieux_text_left{
   position:relative;
   left:20px;
-  margin-right:5px;
   z-index:0;
-  border-radius:20px 0px 0px 20px
+  border-radius:20px 0px 0px 20px;
+  
 }
 
 .lieux_text_right{
   position:relative;
   right:30px;
-  margin-left:20px;
   z-index:0;
   border-radius:0px 20px 20px 0px
 }
@@ -59,9 +60,13 @@
 }
 
 .lieux_button_left{
-    position:relative; left:320px; bottom:50px; 
+    position:relative; 
+    left:310px; 
+    bottom:50px; 
 }
 
 .lieux_button_right{
-    position:relative; left:40px; bottom:50px; 
+    position:relative; 
+    left:40px; 
+    bottom:50px; 
 }
