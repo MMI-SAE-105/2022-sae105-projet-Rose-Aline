@@ -131,3 +131,18 @@ body#article {
   display: flex;
   padding-left: 200px;
  }
+
+ 
+
+  
+  body#pages_autres{
+    background: radial-gradient(var(--light-blue), var(--dark-blue));
+    display:grid;
+  }
+
+    body#pages_autres h1{
+      color: var(--light-text);
+      font-size: var(--big-article-title);
+      font-family: 'Arvo' ;
+      padding: 40px 40px 10px 40px
+    }
