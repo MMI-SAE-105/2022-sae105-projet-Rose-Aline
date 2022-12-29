@@ -72,7 +72,7 @@ body#article {
   color: var(--black-text)
 }
 
-.chapo
+.chapo_musique
 {
   background-color: var(--red);
   margin-left:2.2rem;
@@ -85,6 +85,22 @@ body#article {
   padding-right:1.2rem;
   padding-top:1rem;
 }
+
+.chapo
+{
+  background-color: var(--red);
+  margin-left:2.2rem;
+  margin-right:2.2rem;
+  color: var(--light-text);
+  border-radius: 20px;
+  padding-bottom: 30px;
+  font-size: var(--chapo-bold);
+  padding-left:1rem;
+  padding-right:1rem;
+  padding-top:1rem;
+
+}
+
 
 #playPauseBTN, #playPauseBTN_2 {
   background-color: var(--light-blue);
@@ -115,5 +131,3 @@ body#article {
   display: flex;
   padding-left: 200px;
  }
-
-

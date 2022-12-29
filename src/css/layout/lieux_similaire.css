@@ -1,0 +1,67 @@
+
+.lieux_similaire{
+  background-image: url("/public/img/yellow_menu_wave.svg");
+  background-repeat:no-repeat;
+  background-size: cover;        
+  padding-bottom:0px;
+  padding-top:50px;
+  z-index:-1;
+}
+
+.lieux_similaire h1{
+  color: var(--light-text)
+}
+
+.lieux_image_right, .lieux_image_left{
+  height:193px;
+}
+
+.lieux_image_right{
+  position:relative;
+  right:20px;
+  z-index:1
+}
+
+.lieux_image_left{
+  position:relative;
+  left:20px;
+  z-index:1
+}
+
+.lieux_similaire p{
+  background-color: var(--light-blue);
+  font-size: var(--frise--lieux);
+  height:110px;
+  width:180px;
+  text-align:center;
+  color: var(--light-text)
+}
+
+.lieux_text_left{
+  position:relative;
+  left:20px;
+  margin-right:5px;
+  z-index:0;
+  border-radius:20px 0px 0px 20px
+}
+
+.lieux_text_right{
+  position:relative;
+  right:30px;
+  margin-left:20px;
+  z-index:0;
+  border-radius:0px 20px 20px 0px
+}
+
+.lieux_similaire_container {
+  display: flex;
+  align-items: center;
+}
+
+.lieux_button_left{
+    position:relative; left:320px; bottom:50px; 
+}
+
+.lieux_button_right{
+    position:relative; left:40px; bottom:50px; 
+}

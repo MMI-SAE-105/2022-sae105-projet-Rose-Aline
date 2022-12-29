@@ -13,7 +13,7 @@ height: auto;
   margin-top:2rem
 }
 
-  #image_chapo{
+  #image_chapo_musique{
     position:relative;
     margin-right:2.1rem;
     margin-left: auto;
@@ -21,6 +21,16 @@ height: auto;
     bottom:35px;
    z-index:0
   }
+
+  #image_chapo{
+    position:relative;
+    margin-right:2.1rem;
+    margin-left: auto;
+    display:block;
+    bottom:20px;
+   z-index:0
+  }
+
 
 #red {
   box-shadow: 15px -15px var(--red);
