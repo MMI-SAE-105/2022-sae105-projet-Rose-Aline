@@ -37,3 +37,10 @@ height: auto;
   border-radius : 20px;
   margin-top:10px;
 }
+
+
+video{
+  padding-top:40px;
+  max-width:100%; 
+  max-height: auto;
+}
