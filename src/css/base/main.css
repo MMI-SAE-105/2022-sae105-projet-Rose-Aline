@@ -19,7 +19,6 @@ body#article {
 
 .main_article {
   padding-top:6rem
-
 }
 
 .article_text p, .main_article h1 , .main_article h2, .main_article h3 {  
@@ -170,3 +169,4 @@ body#pages_autres b{
 .glossaire_last{
   margin-bottom:150px
 }
+
