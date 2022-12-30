@@ -79,7 +79,7 @@
 
     .menu hr {
         opacity:40%;
-        color: var(--light-text)
+        color: var(--white)
     }
 
     .menu_section_jaune {  
@@ -126,6 +126,3 @@
   {
     overflow:hidden;
   }
-
-
-  

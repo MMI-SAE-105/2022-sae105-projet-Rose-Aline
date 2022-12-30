@@ -132,9 +132,6 @@ body#article {
   padding-left: 200px;
  }
 
- 
-
-  
   body#pages_autres{
     background: radial-gradient(var(--light-blue), var(--dark-blue));
     display:grid;
@@ -146,3 +143,28 @@ body#article {
       font-family: 'Arvo' ;
       padding: 40px 40px 10px 40px
     }
+
+    
+.texte_pages_autres{
+  font-family: 'Ubuntu';
+  font-size: var(--chapeau);
+  color: var(--light-text);
+  padding: 0px 30px 0px 40px
+}
+
+body#pages_autres b{
+  font-family: 'Arvo';
+  font-size: var(--intertitre);
+  color: var(--yellow);
+  padding: 0px 30px 0px 40px
+}
+
+body#pages_autres hr{
+  opacity:40%;
+  color: var(--white);
+  margin:20px 40px 20px 40px
+}
+
+.glossaire_last{
+  margin-bottom:150px
+}

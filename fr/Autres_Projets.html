@@ -1,53 +1,182 @@
 <!DOCTYPE html>
-<html lang="fr">
- 
+<html lang="fr" x-data="{menuIsOpen: false}" :class=""{noscroll:menuIsOpen,}>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Autres Projets</title>   
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Autres projets - The Flow of Time</title>
+  <link rel="stylesheet" href="/src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+
 </head>
-        
+     
+ <!-- Header-->
 
-<body>
-    
+ <header class="header">
+    <a href="index.html" class="headertext"> The flow of Time</a>
+    <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
+        <img src="/public/icons/menu_icon.webp" alt="Icone cliquable pour accéder au menu">
+      </button> 
+    </div>
+  </header>
+  <!-- Fin Header-->
+  
+  
+  <!-- Menu -->
+  
+  <nav id="mainNav"  
+      class="menu" :class="menuIsOpen && 'menu--open'"
+  >
+    <ul>
+      <li>
+          <img src="/public/icons/Accueil_icon.svg" alt="Icone d'acceuil" >
+          <a href="index.html">Accueil</a>
+        </li>
+  
+        <li>
+          <img src="/public/icons/icon_music.svg" alt="Icone musique">
+          <a href="Everywhere_at_the_end_of_time.html">Everywhere at the end of time</a>
+        </li>
+          
+        <li>
+          <img src="/public/icons/icon_movie.svg" alt="Icone film">
+          <a href="Triplettes_de_Belleville.html">Les triplettes de Belleville</a>
+        </li>
+  
+        <li>
+          <img src="/public/icons/icon_book.svg" alt="Icone livre">
+          <a href="Matin_brun.html">Matin brun</a>
+        </li>
+  
+        <li>
+          <img src="/public/icons/icon_location.svg" alt="Icone lieu">
+          <a href="Deep_Dive_Dubai.html">Deep Dive Dubai</a>
+        </li>
+  
+        <li>
+          <img src="/public/icons/icon_hope.svg" alt="Icone espoir">
+          <a href="Teletravail.html">Télétravail</a>
+        </li>
+          
+        <li>
+          <img src="/public/icons/icon_regret.svg" alt="Icone regret">
+          <a href="La_notion_du_temps.html">La notion du temps</a>
+        </li>
+      </ul>
+    </div>
+        <div class="menu_section_jaune">
+            <ul>
+              <li>
+                <a href="Contact.html">• CONTACT</a>
+              </li>
+  
+              <li>
+                <a href="Autres_Projets.html">• AUTRES PROJETS </a>
+              </li>
+                
+              <li>
+              <a href="A_propos.html"> • À PROPOS</a>
+              </li>
+              <hr>
+            </ul>
+            
+            <div class="menu_jaune_option">
+                <a href="../eng/index.html" onclick="document.cookie = 'nf_lang=eng; path=/'"><img src="/public/icons/ENG_icon.svg" alt="Icone cliquable pour changer la langue en anglais" ></a>
+                <a href="../fr/index.html" onclick="document.cookie = 'nf_lang=fr; path=/'"><img src="/public/icons/FR_icon.svg" alt="Icone cliquable pour changer la langue en français"></a>
+                <a href="Glossaire.html" class="glossaire">   GLOSSAIRE </a>
+            </div>
+      </div>
+  </div>
+  </nav>
+  
+  <!-- Fin menu-->   
+  
+  <body id="pages_autres">
+
     <h1>Autres Projets</h1>
-    Découvrez les autres projets des étudiants de la filière MMI Montbéliard sur le thème de “Notes pour plus tard”.
+    <p class="texte_pages_autres">Découvrez les autres projets des étudiants de la filière MMI Montbéliard sur le thème de “Notes pour plus tard”.</p>
 
-    <img src="/public/img/Autre_projets_Purple.webp" alt="Image d'une statue devant un ciel violet">
-    <h2>Bear this in mind</h2>
-    ROSETTA Chloé
-    <button>En savoir plus</button>
+    <div class="autre_projet">
+        <img src="/public/img/Autre_projets_Purple.webp" alt="Image d'une statue devant un ciel violet">
+            <div class="projet_texte"> 
+                <h2>Bear this in mind</h2>
+                <p>ROSETTA Chloé</p>
+            </div>
+    </div>
+    <button class="projet_bouton">En savoir plus</button>
     
-    <img src="/public/img/Autre_projets_Sport.webp" alt="Image d'un stade de foot">
-    <h2> Back to past</h2>
-    QUERE Tom 
-    <button>En savoir plus</button>
-    
-    <img src="/public/img/Autre_projets_Terre.webp" alt="Image de la planete Terre">
-    <h2> Earthtopic</h2>
-    REBUFFONI Xavier 
-    <button>En savoir plus</button>
+    <div class="autre_projet">
+        <img src="/public/img/Autre_projets_Sport.webp" alt="Image d'un stade de foot">
+            <div class="projet_texte"> 
+                <h2> Back to past</h2>
+                <p>QUERE Tom</p>
+            </div>
+    </div>
+    <button class="projet_bouton">En savoir plus</button>
 
-    <img src="/public/img/Autre_projets_Evangelion.webp" alt="Image qui provient de l'anime Evangelion">
-    <h2> Science&#150fictionForAll </h2>
-    RICHARD Yanis  
-    <button>En savoir plus</button>
+    <div class="autre_projet">
+        <img src="/public/img/Autre_projets_Terre.webp" alt="Image de la planete Terre">
+            <div class="projet_texte"> 
+                <h2> Earthtopic</h2>
+                <p>REBUFFONI Xavier</p>
+            </div>
+    </div>
+    <button class="projet_bouton">En savoir plus</button>
 
-    <img src="/public/img/Autre_projets_Death_note.webp" alt="Image qui provient de l'anime Death Note">
-    <h2> Retour vers le présent</h2>
-    RIPERT Noah
-    <button>En savoir plus</button>
-       
-    <img src="/public/img/Autre_projets_Robot.webp" alt="Image d'un robot futuristique">
-    <h2> Advancing technologie</h2>
-     RUCHET Maxime
-    <button>En savoir plus</button>
+    <div class="autre_projet">
+        <img src="/public/img/Autre_projets_Evangelion.webp" alt="Image qui provient de l'anime Evangelion">
+            <div class="projet_texte"> 
+                <h2> Science&#150fictionForAll </h2>
+                <p>RICHARD Yanis</p> 
+            </div>
+    </div>
+    <button class="projet_bouton">En savoir plus</button>
 
-    <img src="/public/img/Autre_projets_Travel_Time.webp" alt="Image qui du logo du site Travel Time">
-    <h2> Travel Time</h2>
-    RUFF Antoine
-    <button>En savoir plus</button>
+    <div class="autre_projet">
+        <img src="/public/img/Autre_projets_Death_note.webp" alt="Image qui provient de l'anime Death Note">
+            <div class="projet_texte"> 
+                <h2> Retour vers le présent</h2>
+                <p>RIPERT Noah</p>
+            </div>
+    </div>
+    <button class="projet_bouton">En savoir plus</button>
 
-    
+    <div class="autre_projet">
+        <img src="/public/img/Autre_projets_Robot.webp" alt="Image d'un robot futuristique">
+            <div class="projet_texte"> 
+                <h2> Advancing technologie</h2>
+                <p>RUCHET Maxime</p>
+            </div>
+    </div>
+    <button class="projet_bouton">En savoir plus</button>
+
+    <div class="autre_projet">
+        <img src="/public/img/Autre_projets_Travel_Time.webp" alt="Image qui du logo du site Travel Time">
+            <div class="projet_texte"> 
+                <h2> Travel Time</h2>
+                <p>RUFF Antoine</p>
+            </div>
+    </div>
+    <button class="projet_bouton">En savoir plus</button>
+
+
+        <!-- Footer-->
+
+        <footer> 
+          <div class="footer_main"> 
+              <div class="footer_text"> 
+                  <p>Aline ROSE MMI 1 &#150 C1</p>
+                  <a href="mailto:alinerose262003@gmail.com"> alinerose262003@gmail.com </a>
+                    <div class="footer_icon"> 
+                        <p>Projet réalisé dans le cadre d&#39un exercice
+                        pédagogique au
+                        <a href="http://mmimontbeliard.com/contact"> département MMI de Montbéliard </a></p>
+                        <img src="/public/icons/logo_MMI.svg" alt="Logo du site du département MMI de Montbéliard">
+                    </div>
+              </div>
+          </div>
+        </footer>
+
+      <!-- Fin Footer-->
     </body>
