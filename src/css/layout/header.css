@@ -17,8 +17,7 @@
             position:relative 
         }
 
-        #article .header 
-        {
+        #article .header, #pages_autres .header {
             position:fixed
         }
 
