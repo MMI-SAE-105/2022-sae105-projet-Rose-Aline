@@ -1,0 +1,10 @@
+.filmographie{
+    position:relative;
+    background-image: url("/public/img/blue_wave_filmographie.Webp");
+    background-repeat:no-repeat;
+    background-size: cover;        
+    padding-bottom:40px;
+    padding-top:50px;
+    top:40px;
+    z-index:0;
+  }

@@ -85,7 +85,6 @@ scroll-snap-align: start;
   padding:28px;
   top:140px;
   position: relative;
-  z-index:3;
 }
 
 .carrousel_btn-avant {

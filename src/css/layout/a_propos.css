@@ -1,12 +1,10 @@
 .a_propos_blue_circle {
-    font-size: var(--article--regular);
     padding-top:90px;
     padding-right:50px;
     background-color: var(--light-blue);
     border-radius: 50%;
     position: relative;
     margin: 0;
-    color: white;
     height:322px;
     width:333px;    
     margin-left: auto;
@@ -14,7 +12,7 @@
 
   }
   
-  .a_propos_blue_circle::before {
+.a_propos_blue_circle::before {
         content: "";
         width: 50%;
         height: 100%;
@@ -36,13 +34,12 @@
       .a_propos_red_circle {
         font-size: var(--article--regular);
         padding-top:50px;
-        padding-right:50px;
-        padding-left:10px;
+        padding-right:30px;
+        padding-left:0px;
         background-color: var(--dark-red);
         border-radius: 50%;
         position: relative;
         margin: 0;
-        color: white;
         height:322px;
         width:333px;
         bottom:50px;
@@ -78,7 +75,6 @@
             border-radius: 50%;
             position: relative;
             margin: 0;
-            color: white;
             height:322px;
             width:333px;
             bottom:100px;
@@ -104,3 +100,10 @@
                 );
                 shape-margin: 7%;
               }
+
+
+.a_propos_texte{
+  font-family: 'Ubuntu';
+  font-size: var(--article--regular);
+  color: var(--light-text)
+   }

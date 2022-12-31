@@ -103,7 +103,7 @@
         en suivant les mésaventures d&#39une équipe étrange de quatre mamies, leur chien et un cycliste mélancolique.
       </p>
     </div>
-    <video controls="false" autoplay="autoplay" poster="/public/img/Video_cover.webp"  alt="Image cliquable pour lancer la vidéo" id="image_chapo"><source src="/public/video/Triplette_de_belleville.mp4"></video>
+    <video controls="false" autoplay="autoplay" poster="/public/img/Video_cover.webp"  alt="Image cliquable pour lancer la vidéo" id="image_chapo"><source src="/public/video/Triplette_de_belleville.mp4" type="video/mp4"></video>
 
     <div class ="article_text">
       <p>
@@ -138,16 +138,151 @@
         Les Américains sont obèses comme leur Statue de la Liberté avec son hamburger.
       </p>
 
-      <img src="/public/img/capture_ecran.webp" alt="Image de l'affiche des Triplettes de Bellevilles" class="Image_article">
+      <img src="/public/img/capture_ecran.webp" alt="Image de l'affiche des Triplettes de Bellevilles" class="Image_article" id="red">
       <h3>Début du film Les triplettes de Belleville, avec Mémé Suza, son petit&#150fils Champion et son chien Bruno.</h3>
 
       <h2>La roue du temps</h2>
-      <p>Par ailleurs, ce film nous invite sous l&#39amusement à réfléchir sur le temps &#58 les impacts de notre passé sur notre présent comme la passion du vélo de Champion qui vient d&#39un souvenir de ses parents ou encore la phobie des trains du chien Bruno qui provient d&#39un ancien traumatisme.
+      <p>Par ailleurs, ce film nous invite sous l&#39amusement à réfléchir sur le temps et les impacts de notre passé sur notre présent comme la passion du vélo de Champion qui vient d&#39un souvenir de ses parents ou encore la phobie des trains du chien Bruno qui provient d&#39un ancien traumatisme.
         En conclusion, le temps tourne et avance comme une roue de vélo.
         L&#39époque des Triplettes montre encore ses splendeurs fanées et finit en apothéose avec une ébouriffante course&#150poursuite.
       </p>   
 
       <a href="#" class="top"><img src="/public/icons/button_scroll_up.svg" alt="bouton cliquable pour retourner en haut de la page"></a>
+
+      <div class="filmographie">
+        <h1>Filmographie & Autres réalisations</h1>
+        <p>Sylvain Chomet est un dessinateur et scénariste de bande dessinée et de films ainsi que compositeur français. 
+          Ce diplômé des Beaux-Arts d'Angoulême a gagné de nombreuses récompenses et Oscars dont l&#39étoile d'or du cinéma français, le prix Génie du meilleur film, le grand Prix du cinéma européen et le césar du meilleur film d'animation.</p>
+     
+            <!-- Carousel-->
+
+              <div class="carousel" x-data="{}">
+                <div class="carrousel_parent-ecrans" x-ref="parent">
+                    
+                  <div class="carrousel_ecran">
+                      <div class="carrousel_btn_countainer">
+                        <button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant" @click ="$refs.parent.scrollLeft += $refs.parent.clientWidth" ></button>
+                      </div>
+                        <figure>
+                            <img src="/public/img/Music.webp" alt="Image écran 1 : l'album everywhere at the end of time" class="img_carousel">
+                            <figcaption>
+                              <div class="carousel_circle">
+                                <div class="text">
+                                  <h2>1998</h2>
+                                  <p class="filmograghie_texte">La vieille dame et les pigeons</p>
+                                  <hr>
+                                  <p>Court métrage d&#39animation</p>
+                                </div>
+                              </div>    
+                         </figcaption> 
+                        </figure>
+                    </div>
+            
+                    <div class="carrousel_ecran">
+                        <div class="carrousel_btn_countainer">
+                          <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant" @click ="$refs.parent.scrollLeft -= $refs.parent.clientWidth" ></button>
+                          <button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant" @click ="$refs.parent.scrollLeft += $refs.parent.clientWidth" ></button>
+                        </div>
+                        <figure>
+                            <img src="/public/img/illustration_brown.webp" alt="Image écran 2 : Illustration de matin brun par Enki Bilal" class="img_carousel">
+                            <figcaption>
+                              <div class="carousel_circle">
+                                <div class="text">
+                                  <h2>1998</h2>
+                                  <p class="filmograghie_texte">La vieille dame et les pigeons</p>
+                                  <hr>
+                                  <p>Court métrage d&#39animation</p>
+                            </div>
+                          </div>    
+                            </figcaption>
+                        </figure>
+                    </div>
+            
+                    <div class="carrousel_ecran">
+                      <div class="carrousel_btn_countainer">
+                        <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant" @click ="$refs.parent.scrollLeft -= $refs.parent.clientWidth" ></button>
+                        <button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant" @click ="$refs.parent.scrollLeft += $refs.parent.clientWidth" ></button>
+                      </div>
+                        <figure>
+                            <img src="/public/img/Film.webp" alt="Image écran 3 : Image provenant du film les triplettes de Bellevilles" class="img_carousel">
+                            <figcaption>
+                              <div class="carousel_circle">
+                                <div class="text">
+                                  <h2>1998</h2>
+                                  <p class="filmograghie_texte">La vieille dame et les pigeons</p>
+                                  <hr>
+                                  <p>Court métrage d&#39animation</p>
+                            </div>
+                          </div>   
+                            </figcaption>
+                        </figure>
+                    </div>
+            
+                    <div class="carrousel_ecran">
+                      <div class="carrousel_btn_countainer">
+                        <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant" @click ="$refs.parent.scrollLeft -= $refs.parent.clientWidth" ></button>
+                        <button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant" @click ="$refs.parent.scrollLeft += $refs.parent.clientWidth" ></button>
+                      </div>
+                        <figure>
+                            <img src="/public/img/Lieu.webp" alt="Image écran 4 : Image de la piscine Deep Dive Dubai" class="img_carousel">
+                            <figcaption>
+                              <div class="carousel_circle">
+                                <div class="text">
+                                  <h2>1998</h2>
+                                  <p class="filmograghie_texte">La vieille dame et les pigeons</p>
+                                  <hr>
+                                  <p>Court métrage d&#39animation</p>
+                            </div>
+                          </div>   
+                            </figcaption>
+                        </figure>
+                    </div>
+            
+                    <div class="carrousel_ecran">
+                      <div class="carrousel_btn_countainer">
+                        <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant" @click ="$refs.parent.scrollLeft -= $refs.parent.clientWidth" ></button>
+                        <button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant" @click ="$refs.parent.scrollLeft += $refs.parent.clientWidth" ></button>
+                      </div>
+                        <figure>
+                            <img src="/public/img/Regret.webp" alt="Image écran 5 : Image d'un réveil" class="img_carousel">
+                            <figcaption>
+                              <div class="carousel_circle">
+                                <div class="text">
+                                  <h2>1998</h2>
+                                  <p class="filmograghie_texte">La vieille dame et les pigeons</p>
+                                  <hr>
+                                  <p>Court métrage d&#39animation</p>
+                            </div>
+                          </div>   
+                            </figcaption>
+                        </figure>
+                    </div>
+            
+                    <div class="carrousel_ecran" class="icon_carousel">
+                      <div class="carrousel_btn_countainer">
+                        <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant" @click ="$refs.parent.scrollLeft -= $refs.parent.clientWidth" ></button>
+                      </div>
+                        <figure>
+                            <img src="/public/img/Espoir.webp" alt="Image écran 6 : Image d'une personne tenant un ordinateur portable" class="img_carousel">
+                            <figcaption>
+                              <div class="carousel_circle">
+                                <div class="text">
+                                  <h2>1998</h2>
+                                  <p class="filmograghie_texte">La vieille dame et les pigeons</p>
+                                  <hr>
+                                  <p>Court métrage d&#39animation</p>
+                            </div>
+                          </div>   
+                            </figcaption>
+                        </figure>
+                    </div>
+                  </div>
+                </div>
+
+            <!-- Fin Carousel-->
+
+        </div>
+
     </div> 
   </div>
 </body> 
