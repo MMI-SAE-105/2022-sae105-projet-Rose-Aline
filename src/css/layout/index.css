@@ -124,9 +124,10 @@ scroll-snap-align: start;
 
   .icon_carousel
   {
-    width:4.3rem;
+    position:relative;
+    width:45px;
     height:auto;
-    padding-right:15%;
+    left:5px;
     padding-top:10%;
   }
 
@@ -138,7 +139,7 @@ scroll-snap-align: start;
       color: var(--light-text);
       width: 100%;
       height: 100%;
-      padding-right:8px;
+      padding-right:10px;
     }
 
     .text p {
@@ -146,7 +147,8 @@ scroll-snap-align: start;
       font-size: 3.7vw;
       line-height: 1;
       text-align:left;
-    }
+      padding-left:25px
+        }
 
       .text a
       {
@@ -159,25 +161,6 @@ scroll-snap-align: start;
         border:none;
         width:60%;
       }
-     
-    .text::before {
-      content: "";
-      width: 50%;
-      height: 100%;
-      float: left;
-      shape-outside: polygon(
-        20% 0%,
-        20% 0%,
-        20% 45%,
-        20% 45%,
-        20% 45%,
-        20% 55%,
-        20% 65%,
-        0 100%
-      
-      );
-      shape-margin: 4%;
-    }
 
     .text p::before {
       content: "";
@@ -212,5 +195,10 @@ scroll-snap-align: start;
 
   .carrousel_ecran a{
     text-decoration: none ;
-    
+}
+
+.bouton_carousel_plus{
+  font-size: var(--small-body);
+  font-family: 'Arvo';
+  color: var(--black-text)
 }

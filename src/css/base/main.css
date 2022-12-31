@@ -27,8 +27,10 @@ body#article {
   padding-top:1rem;
 }
 
+
 .mot_glossaire {
-  color: var(--dark-yellow)
+  color: var(--dark-yellow);
+  text-decoration: none!important;
 }
 
 .main_article p{
@@ -67,7 +69,7 @@ body#article {
   font-weight: var(--image-description)
 }
 
-.main_article a{
+.link{
   color: var(--black-text)
 }
 
