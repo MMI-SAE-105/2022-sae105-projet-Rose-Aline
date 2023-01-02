@@ -101,7 +101,9 @@ scroll-snap-align: start;
   border: none;
 }
 
-.carrousel_btn-apres:first-child{left:287px}
+.carrousel_btn-apres:first-child{
+  left:287px
+}
 
 
 .carrousel_ecran figure {
