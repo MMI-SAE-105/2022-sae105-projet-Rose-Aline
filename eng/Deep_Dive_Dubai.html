@@ -1,89 +1,215 @@
 <!DOCTYPE html>
-<html lang="en">
- 
-<head>
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Deep Dive Dubai</title>   
-     <link rel="stylesheet" href="/src/css/style.css">
-</head>
-        
+<html lang="en" x-data="{menuIsOpen: false}" :class=""{noscroll:menuIsOpen,}>
 
-<body>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deep Dive Dubai - The Flow of Time</title>
+  <link rel="stylesheet" href="/src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+
+</head>
+
+<body id="article">
+
+  <!-- Header-->
+
+    <header class="header">
+      <a href="index.html" class="headertext"> The flow of Time</a>
+      <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
+          <img src="/public/icons/menu_icon.webp" alt="Clickable icon to access the menu">
+        </button> 
+      </div>
+    </header>
+  <!-- Fin Header-->
+
+  <!-- Menu -->
+
+    <nav id="mainNav"  
+        class="menu" :class="menuIsOpen && 'menu--open'"
+    >
+    <div class="menu_article">
+      <ul>
+        <li>
+            <img src="/public/icons/Accueil_icon.svg" alt="Icon to go back to the homepage" >
+            <a href="index.html">Accueil</a>
+          </li>
+
+          <li>
+            <img src="/public/icons/icon_music.svg" alt="Icone music">
+            <a href="Everywhere_at_the_end_of_time.html">Everywhere at the end of time</a>
+          </li>
+            
+          <li>
+            <img src="/public/icons/icon_movie.svg" alt="Icone movie">
+            <a href="Triplets_of_Belleville.html">The triplets of Belleville</a>
+          </li>
+
+          <li>
+            <img src="/public/icons/icon_book.svg" alt="Icone book">
+            <a href="Brown_morning.html">Brown morning</a>
+          </li>
+
+          <li>
+            <img src="/public/icons/icon_location.svg" alt="Icone location">
+            <a href="Deep_Dive_Dubai.html">Deep Dive Dubai</a>
+          </li>
+
+          <li>
+            <img src="/public/icons/icon_hope.svg" alt="Icone hope">
+            <a href="Teleworking.html">Teleworking</a>
+          </li>
+            
+          <li>
+            <img src="/public/icons/icon_regret.svg" alt="Icone regret">
+            <a href="the_notion_of_time.html">The notion of time</a>
+          </li>
+        </ul>
+      </div>
+          <div class="menu_section_jaune">
+              <ul>
+                <li>
+                  <a href="Contact.html">• CONTACT</a>
+                </li>
+
+                <li>
+                  <a href="Other_projects.html">• OTHER PROJECTS </a>
+                </li>
+                  
+                <li>
+                <a href="About.html"> • ABOUT</a>
+                </li>
+                <hr>
+              </ul>
+              
+              <div class="menu_jaune_option">
+                  <a href="../eng/index.html" onclick="document.cookie = 'nf_lang=eng; path=/'"><img src="/public/icons/ENG_icon.svg" alt="Clickable icon to change the language to english" ></a>
+                  <a href="../fr/index.html" onclick="document.cookie = 'nf_lang=fr; path=/'"><img src="/public/icons/FR_icon.svg" alt="Clickable icon to change the language to french"></a>
+                  <a href="Glossary.html" class="glossaire">   GLOSSARY </a>
+              </div>
+        </div>
+    </div>
+   </nav>
+
+  <!-- Fin menu-->
+
+  <div class="main_article">
      
      <h1>The depths of time</h1>
+          <div class="chapo">
 
-          In the United Arab Emirates, the brand new pool, 
-          <b>Deep Dive Dubai</b>
-          , is a great playground for divers looking for sensations.  
-          <b>With its underwater modern city, it takes us to another dimension of time.</b>
+          <p>
+               In the United Arab Emirates, the brand new pool, 
+               <b>Deep Dive Dubai</b>
+               , is a great playground for divers looking for sensations.  
+               <b>With its underwater modern city, it takes us to another dimension of time.</b>
+          </p>
+     </div>
 
-     
-     <img src="/public/img/Interieur_deep_dive_dubai" alt="Picture of a room inside of the pool Deep Dive Dubai">
-     <p>  
-          Dubai inaugurated the deepest pool in the world in July 2021.
-          A brand new 1500 m2 building in the shape of a giant oyster welcomes 
-          <a href="https://www.deepdivedubai.com/"> Deep Dive Dubai. </a>
-          At a depth of 60 metres, it contains 14 million litres of fresh and hot water.
-          It is a paradise for divers. It welcomes all levels, from beginner to professional.
-          All forms of diving are possible: snorkeling, bottle diving, snorkeling.
-          However, it interests me for another reason: its unique and unusual atmosphere.
-     </p>
+     <img src="/public/img/Interieur_deep_dive_dubai.webp" alt="Picture of a room inside of the pool Deep Dive Dubai" id="image_chapo">
 
-     <img src="/public/img/Exterieur_deep_dive_dubai.webp" alt="Picture of the pool Deep dive dubai">
-     Picture of inside Deep Dive Dubai
+     <div class ="article_text">
+          <p>  
+               Dubai inaugurated the deepest pool in the world in July 2021.
+               A brand new 1500 m2 building in the shape of a giant oyster welcomes 
+               <a href="https://www.deepdivedubai.com/" class="link"> Deep Dive Dubai. </a>
+               At a depth of 60 metres, it contains 14 million litres of fresh and hot water.
+               It is a paradise for divers. It welcomes all levels, from beginner to professional.
+               All forms of diving are possible: snorkeling, bottle diving, snorkeling.
+               However, it interests me for another reason: its unique and unusual atmosphere.
+          </p>
 
-     <h2>A modern Atlantis</h2>
-     <p>
-          Deep Dive Dubai transports us to a sunken city where nature gradually takes back its rights. The mythical 
-          <a href="https://fr.wikipedia.org/wiki/Atlantide">Atlantis</a> 
-          is an obvious reference. 
-          However, divers will visit the ruins of a contemporary city.
-          They can meet an abandoned car, a baby-foot table, arcade games<a href="Glossaire.html"> <img src="/public/icons/i_info.svg" alt="clickable icon to access the glossary and the definition of 'Arcade games'"></a>, fully furnished rooms ready to be discovered. 
-          This decor animated by 164 games of lights and sound atmospheres gives a strange impression.
-          <b>It seems that our present has become a past and is rediscovered in a future period.</b>
-     </p>
+          <img src="/public/img/Exterieur_deep_dive_dubai.webp" alt="Picture of the pool Deep dive dubai" class="Image_article">
+            <h3>Picture of inside Deep Dive Dubai</h3>
 
-     <img src="/public/img/Moto_deep_dive.webp" alt="Picture of a sunken motorcycle inside of Deep Dive Dubai">
-     Picture of inside Deep Dive Dubai
+          <h2>A modern Atlantis</h2>
+          <p>
+               Deep Dive Dubai transports us to a sunken city where nature gradually takes back its rights. The mythical 
+               <a href="https://fr.wikipedia.org/wiki/Atlantide" class="link">Atlantis</a> 
+               is an obvious reference. 
+               However, divers will visit the ruins of a contemporary city.
+               They can meet an abandoned car, a baby-foot table, <a href="Glossaire.html" class="mot_glossaire"></a>arcade games <img src="/public/icons/i_info.svg" alt="clickable icon to access the glossary and the definition of 'Arcade games'"></a>, fully furnished rooms ready to be discovered. 
+               This decor animated by 164 games of lights and sound atmospheres gives a strange impression.
+               <b>It seems that our present has become a past and is rediscovered in a future period.</b>
+          </p>
 
-
-     <h2>The end of our time</h2>
-     <p>
-          Apart from the visitors, this pool contains no other life form, whether animal or vegetable. 
-          These elements reinforce the post-apocalyptic
-          <a href="Glossaire.html"> <img src="/public/icons/i_info.svg" alt="clickable icon to access the glossary and the definition of 'post-apocalyptic'"></a> atmosphere that reigns there. Putting aside the tourist aspect of this place, this pool represents the mystery of the depths, the anguish of the unknown. 
-          In conclusion, <b>it takes us to another dimension.</b>
-          This place reminds us that our contemporary era will have an end but that it can also be revived in the future in a new form.
-     </p>
+          <img src="/public/img/Moto_deep_dive.webp" alt="Picture of a sunken motorcycle inside of Deep Dive Dubai" class="Image_article" id="red">
+           <h3>Picture of inside Deep Dive Dubai</h3>
 
 
-     <img src="/public/icons/button_scroll_up.svg" alt="clickable button to go back to the top of the page">
+          <h2>The end of our time</h2>
+          <p>
+               Apart from the visitors, this pool contains no other life form, whether animal or vegetable. 
+               These elements reinforce the <a href="Glossaire.html" class="mot_glossaire"> post-apocalyptic
+                <img src="/public/icons/i_info.svg" alt="clickable icon to access the glossary and the definition of 'post-apocalyptic'"></a> atmosphere that reigns there. Putting aside the tourist aspect of this place, this pool represents the mystery of the depths, the anguish of the unknown. 
+               In conclusion, <b>it takes us to another dimension.</b>
+               This place reminds us that our contemporary era will have an end but that it can also be revived in the future in a new form.
+          </p>
 
 
+          <a href="#" class="top"><img src="/public/icons/button_scroll_up.svg" alt="Clickable button to return to the top of the page"></a>
+          <!-- Fin article-->
+    
+    <div class="lieux_similaire">
 
      <h1>Similar places</h1>
+     <img src="/public/icons/lieux_similaire_vertical_wave.svg" class="lieux_vertical_wave">
+       
+           <div class="lieux_similaire_container">
+             <img src="/public/img/Rond_Sculptures.webp" alt="Picture of the underwater sculptures of Jason deCaires Taylore" class="lieux_image_left">
+             <p class="lieux_text_right"> Underwater sculptures by Jason deCaires Taylor in Granada</p>
+           </div>
+           <a href="https://www.underwatersculpture.com/" class="lieux_button_left"><img src="/public/icons/bouton_plus.svg" alt="clickable button to have more information"></a>
 
-     <img src="/public/icons/bouton_plus.svg" alt="clickable button to see more information about the underwater sculptures">
-     <img src="/public/img/Rond_Sculptures.webp" alt="Picture of the sculptures of Jason deCaires Taylore">
-     Underwater sculptures by Jason deCaires Taylorin Granada
+           <div class="lieux_similaire_container">
+             <p class="lieux_text_left">The abandoned city of Kolmanskop in Namibia </p>
+             <img src="/public/img/rond_ville_abandonnee.webp" alt="Picture of the city of Kolmanskop in Namibia" class="lieux_image_right">
+           </div>
+           <a href="https://www.namibie-en-liberte.com/conseils-voyage/ou-aller/kolmanskop" class="lieux_button_right"><img src="/public/icons/bouton_plus.svg"  alt="clickable button to have more information"></a>
 
-     <img src="/public/icons/bouton_plus.svg"  alt="clickable button to see more information about Kolmanskop">
-     <img src="/public/img/rond_ville_abandonnée.webp" alt="Picture of the city of kolmanskop under the sand">
-     The abandoned  city of Kolmanskop in Namibia 
 
-     <img src="/public/icons/bouton_plus.svg"  alt="clickable button to see more information about the Montsouris reservoir">
-     <img src="/public/img/rond_réservoir.webp" alt="Picture of the Montsouris reservoir of Paris">
-     Montsouris reservoir in Paris
+           <div class="lieux_similaire_container">
+             <img src="/public/img/rond_reservoir.webp" alt="Picture of the Montsouris reservoir" class="lieux_image_left">
+             <p class="lieux_text_right">Montsouris reservoir in Paris</p>
+           </div>
+           <a href="https://www.paris.fr/pages/a-la-decouverte-du-tresor-cache-du-reservoir-montsouris-7561" class="lieux_button_left"><img src="/public/icons/bouton_plus.svg"  alt="clickable button to have more information"></a>
 
-     <img src="/public/icons/bouton_plus.svg"  alt="clickable button to see more information about The city by Michael Heizer">
-     <img src="/public/img/Rond_Michael_Heizer.webp" alt="Picture of The city by Michael Heizer">
-     The city by Michael Heizer in Nevada, USA 
+           <div class="lieux_similaire_container">
+             <p class="lieux_text_left">The city by Michael Heizer in Nevada, USA </p>
+             <img src="/public/img/Rond_Michael_Heizer.webp" alt="Picture of the city by Michael Heizer" class="lieux_image_right">
+           </div>
+           <a href="https://www.beauxarts.com/vu/michael-heizer-signe-dans-le-nevada-la-plus-grande-oeuvre-dart-contemporain-du-monde/" class="lieux_button_right"><img src="/public/icons/bouton_plus.svg"  alt="clickable button to have more information"></a>
 
-     <img src="/public/icons/bouton_plus.svg"  alt="clickable button to see more information about Geoglyphs of the Nazca Desert">
-     <img src="/public/img/rond_geoglyphes.webp" alt="Picture of the geoflyphs of Nazca">
-     Geoglyphs of the Nazca Desert in Peru
+         <div class="lieux_similaire_container">
+           <img src="/public/img/rond_geoglyphes.webp" alt="Picture of the Geoglyphs of the Nazca Desert in Peru" class="lieux_image_left">
+           <p class="lieux_text_right">Geoglyphs of the Nazca Desert in Peru</p>
+         </div>
+         <a href="https://www.nationalgeographic.fr/histoire/archeologie-les-nouveaux-geoglyphes-de-nazca" class="lieux_button_left"><img src="/public/icons/bouton_plus.svg"  alt="clickable button to have more information"></a>
 
-     <img src="/public/icons/button_scroll_up-1.svg" alt="clickable button to go back to the top of the page">
+     <a href="#" class="top"><img src="/public/icons/button_scroll_up_1.svg" alt="Clickable button to return to the top of the page"></a>
+   </div> 
+ </div> 
+
+  <!-- Fin Lieux similaires-->
+
+  <!-- Footer-->
+
+  
+  <footer> 
+     <div class="footer_main"> 
+         <div class="footer_text"> 
+             <p>Aline ROSE MMI 1 &#150 C1</p>
+             <a href="mailto:alinerose262003@gmail.com"> alinerose262003@gmail.com </a>
+               <div class="footer_icon"> 
+                   <p>Project realized in an educational exercise in the
+                   <a href="http://mmimontbeliard.com/contact">  MMI department of Montbéliard </a></p>
+                   <img src="/public/icons/logo_MMI.svg" alt="MMI de Montbéliard Logo">
+               </div>
+         </div>
+      </div>
+   </footer>
+
+<!-- Fin Footer-->
+
 </body>

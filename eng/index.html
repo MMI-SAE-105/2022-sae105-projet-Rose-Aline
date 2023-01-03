@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" x-data="{menuIsOpen: false}" :class=""{noscroll:menuIsOpen,}>
 
 <head>
   <meta charset="UTF-8">
@@ -7,36 +7,249 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Flow of Time</title>
   <link rel="stylesheet" href="/src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
 
 </head>
 
+<body id="home">
 
+  <!-- Header-->
 
-<body>
+    <header class="header">
+      <a href="index.html" class="headertext"> The flow of Time</a>
+      <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
+          <img src="/public/icons/menu_icon.webp" alt="Clickable icon to access the menu">
+        </button> 
+      </div>
+    </header>
+  <!-- Fin Header-->
 
- <div class="header">
-  <div class="headertext">  The flow of Time </div>
-  <img src="/public/icons/menu_icon.webp" alt="Clickable icon to access the menu"> 
-</div>
+  <!-- Menu -->
 
+    <nav id="mainNav"  
+        class="menu" :class="menuIsOpen && 'menu--open'"
+    >
+    <div class="menu_article">
+      <ul>
+        <li>
+            <img src="/public/icons/Accueil_icon.svg" alt="Icon to go back to the homepage" >
+            <a href="index.html">Accueil</a>
+          </li>
+
+          <li>
+            <img src="/public/icons/icon_music.svg" alt="Icone music">
+            <a href="Everywhere_at_the_end_of_time.html">Everywhere at the end of time</a>
+          </li>
+            
+          <li>
+            <img src="/public/icons/icon_movie.svg" alt="Icone movie">
+            <a href="Triplets_of_Belleville.html">The triplets of Belleville</a>
+          </li>
+
+          <li>
+            <img src="/public/icons/icon_book.svg" alt="Icone book">
+            <a href="Brown_morning.html">Brown morning</a>
+          </li>
+
+          <li>
+            <img src="/public/icons/icon_location.svg" alt="Icone location">
+            <a href="Deep_Dive_Dubai.html">Deep Dive Dubai</a>
+          </li>
+
+          <li>
+            <img src="/public/icons/icon_hope.svg" alt="Icone hope">
+            <a href="Teleworking.html">Teleworking</a>
+          </li>
+            
+          <li>
+            <img src="/public/icons/icon_regret.svg" alt="Icone regret">
+            <a href="the_notion_of_time.html">The notion of time</a>
+          </li>
+        </ul>
+      </div>
+          <div class="menu_section_jaune">
+              <ul>
+                <li>
+                  <a href="Contact.html">• CONTACT</a>
+                </li>
+
+                <li>
+                  <a href="Other_projects.html">• OTHER PROJECTS </a>
+                </li>
+                  
+                <li>
+                <a href="About.html"> • ABOUT</a>
+                </li>
+                <hr>
+              </ul>
+              
+              <div class="menu_jaune_option">
+                  <a href="../eng/index.html" onclick="document.cookie = 'nf_lang=eng; path=/'"><img src="/public/icons/ENG_icon.svg" alt="Clickable icon to change the language to english" ></a>
+                  <a href="../fr/index.html" onclick="document.cookie = 'nf_lang=fr; path=/'"><img src="/public/icons/FR_icon.svg" alt="Clickable icon to change the language to french"></a>
+                  <a href="Glossary.html" class="glossaire">   GLOSSARY </a>
+              </div>
+        </div>
+    </div>
+   </nav>
+
+  <!-- Fin menu-->
+
+  <!-- Title -->
+
+    <div class="index_picture">
+        <img src="/public/icons/Logo_Site.svg" alt="Logo du site 'The Flow of Time'">
+          <p>Exploration of time</p> <p>and its mysteries</p>
+          <img src="/public/icons/Golden_Wave.svg" alt="Decorative wave" class="subtitle_wave">
+    </div>
+
+  <!-- Fin Title-->
+
+  <!-- Carousel-->
 <div class="index">
 
-  <div class="index_picture">
-    <img src="/public/icons/Logo_Site.svg" alt="Logo of the site 'The Flow of Time'">
-    <img src="/public/icons/Golden_Wave.svg" alt="Decorative wave">
-    <img src="/public/img/Music.webp" alt="Picture of the album everywhere at the end of time">
+<body id="article">
+
+  <div class="carousel" x-data="{}">
+    <div class="carrousel_parent-ecrans" x-ref="parent">
+        
+      <div class="carrousel_ecran">
+          <div class="carrousel_btn_countainer">
+            <button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant" @click ="$refs.parent.scrollLeft += $refs.parent.clientWidth" ></button>
+          </div>
+            <figure>
+                <img src="/public/img/Music.webp" alt="screen 1 : Cover of the album Everywhere at the end of time" class="img_carousel">
+                <figcaption>
+                  <div class="carousel_circle">
+                    <div class="text">
+                      <img src="/public/icons/icon_music_wh.svg" class="icon_carousel">
+                      <p>Discovery of the loss of memory and time through the album Everywhere at the end of time by The Caretaker</p>
+                      <p> <a href="Everywhere_at_the_end_of_time.html" alt="Bouton clickable pour accéder a l'article" class="bouton_carousel_plus">Read more</a></p>
+                    </div>
+                  </div>    
+             </figcaption> 
+            </figure>
+        </div>
+
+        <div class="carrousel_ecran">
+            <div class="carrousel_btn_countainer">
+              <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant" @click ="$refs.parent.scrollLeft -= $refs.parent.clientWidth" ></button>
+              <button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant" @click ="$refs.parent.scrollLeft += $refs.parent.clientWidth" ></button>
+            </div>
+            <figure>
+                <img src="/public/img/illustration_brown.webp" alt="screen 2 : Illustration of brown morning by Enki Bilal" class="img_carousel">
+                <figcaption>
+                  <div class="carousel_circle">
+                    <div class="text">
+                      <img src="/public/icons/icon_book_wh.svg" class="icon_carousel">
+                      <p>Brown Morning is a new short story that deals with totalitarian risks and their installation in our daily lives.</p>
+                      <p> <a href="Matin_brun.html" alt="Bouton clickable pour accéder a l'article" class="bouton_carousel_plus">Read more</a></p>
+                </div>
+              </div>    
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="carrousel_ecran">
+          <div class="carrousel_btn_countainer">
+            <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant" @click ="$refs.parent.scrollLeft -= $refs.parent.clientWidth" ></button>
+            <button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant" @click ="$refs.parent.scrollLeft += $refs.parent.clientWidth" ></button>
+          </div>
+            <figure>
+                <img src="/public/img/Film.webp" alt="Screen 3 : Picture from the movie Triplets of Belleville" class="img_carousel">
+                <figcaption>
+                  <div class="carousel_circle">
+                    <div class="text">
+                  <img src="/public/icons/icon_movie_wh.svg" class="icon_carousel">
+                  <p>The Triplets of Belleville is an animated film by Sylvain Chomet that transports us to an era between reality and imagination.</p>
+                  <p> <a href="Triplettes_de_Belleville.html" alt="Bouton clickable pour accéder a l'article" class="bouton_carousel_plus">Read more</a></p>
+                </div>
+              </div>   
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="carrousel_ecran">
+          <div class="carrousel_btn_countainer">
+            <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant" @click ="$refs.parent.scrollLeft -= $refs.parent.clientWidth" ></button>
+            <button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant" @click ="$refs.parent.scrollLeft += $refs.parent.clientWidth" ></button>
+          </div>
+            <figure>
+                <img src="/public/img/Lieu.webp" alt="Screen 4 : picture of the pool Deep Dive Dubai" class="img_carousel">
+                <figcaption>
+                  <div class="carousel_circle">
+                    <div class="text">
+                  <img src="/public/icons/icon_location_wh.svg" class="icon_carousel">
+                  <p>Deep Dive Dubai is a paradise for divers who want to explore a modern city frozen in time.</p>                      
+                  <p> <a href="Deep_Dive_Dubai.html" alt="Bouton clickable pour accéder a l'article" class="bouton_carousel_plus">Read more</a></p>
+                </div>
+              </div>   
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="carrousel_ecran">
+          <div class="carrousel_btn_countainer">
+            <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant" @click ="$refs.parent.scrollLeft -= $refs.parent.clientWidth" ></button>
+            <button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant" @click ="$refs.parent.scrollLeft += $refs.parent.clientWidth" ></button>
+          </div>
+            <figure>
+                <img src="/public/img/Regret.webp" alt="Screen 5: Image of an alarm clock" class="img_carousel">
+                <figcaption>
+                  <div class="carousel_circle">
+                    <div class="text">
+                  <img src="/public/icons/icon_regret_wh.svg" class="icon_carousel">
+                  <p>Our generation has developed another notion of time and has lost the ability to enjoy the feeling of boredom.</p>
+                  <p> <a href="La_notion_du_temps.html" alt="Bouton clickable pour accéder a l'article" class="bouton_carousel_plus">Read more</a></p>
+                </div>
+              </div>   
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="carrousel_ecran" class="icon_carousel">
+          <div class="carrousel_btn_countainer">
+            <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant" @click ="$refs.parent.scrollLeft -= $refs.parent.clientWidth" ></button>
+          </div>
+            <figure>
+                <img src="/public/img/Espoir.webp" alt="Screen 6: Picture of a person with their laptop" class="img_carousel">
+                <figcaption>
+                  <div class="carousel_circle">
+                    <div class="text">
+                  <img src="/public/icons/icon_hope_wh.svg" class="icon_carousel">
+                  <p>Telework is an opportunity in the future for a more organized, efficient and free life.</p>
+                  <p> <a href="Teletravail.html" alt="Clickable icon to access the article" class="bouton_carousel_plus">Read more</a></p>
+                </div>
+              </div>   
+                </figcaption>
+            </figure>
+        </div>
+      </div>
+    </div>
   </div>
 
-</div>
-
-<footer class="footer">
-  Aline ROSE MMI 1 - C1  
-  <a href="mailto:alinerose262003@gmail.com"> alinerose262003@gmail.com </a>
-  Project realized in an  educational exercise in the <a href="http://mmimontbeliard.com/contact"> MMI department of Montbeliard </a>
-  <img src="/public/icons/logo_MMI.svg" alt="Logo of the department MMI of Motnbeliard">
-</footer>
+  <!-- Fin Carousel-->
 
 
+
+  <!-- Footer-->
+
+  
+      <footer> 
+        <div class="footer_main"> 
+            <div class="footer_text"> 
+                <p>Aline ROSE MMI 1 &#150 C1</p>
+                <a href="mailto:alinerose262003@gmail.com"> alinerose262003@gmail.com </a>
+                  <div class="footer_icon"> 
+                      <p>Project realized in an educational exercise in the
+                      <a href="http://mmimontbeliard.com/contact">  MMI department of Montbéliard </a></p>
+                      <img src="/public/icons/logo_MMI.svg" alt="MMI de Montbéliard Logo">
+                  </div>
+            </div>
+         </div>
+      </footer>
+
+  <!-- Fin Footer-->
+  
 
 </body>
 

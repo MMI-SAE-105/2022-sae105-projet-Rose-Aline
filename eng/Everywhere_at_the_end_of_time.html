@@ -1,70 +1,217 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" x-data="{menuIsOpen: false}" :class=""{noscroll:menuIsOpen,}>
 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Everywhere at the end of Time - The Flow of Time</title>
+  <link rel="stylesheet" href="/src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Everywhere at the end of Time</title>   
-      </head>
+</head>
 
+<body id="article">
 
-<body>
+  <!-- Header-->
+
+    <header class="header">
+      <a href="index.html" class="headertext"> The flow of Time</a>
+      <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
+          <img src="/public/icons/menu_icon.webp" alt="Clickable icon to access the menu">
+        </button> 
+      </div>
+    </header>
+  <!-- Fin Header-->
+
+  <!-- Menu -->
+
+    <nav id="mainNav"  
+        class="menu" :class="menuIsOpen && 'menu--open'"
+    >
+    <div class="menu_article">
+      <ul>
+        <li>
+            <img src="/public/icons/Accueil_icon.svg" alt="Icon to go back to the homepage" >
+            <a href="index.html">Accueil</a>
+          </li>
+
+          <li>
+            <img src="/public/icons/icon_music.svg" alt="Icone music">
+            <a href="Everywhere_at_the_end_of_time.html">Everywhere at the end of time</a>
+          </li>
+            
+          <li>
+            <img src="/public/icons/icon_movie.svg" alt="Icone movie">
+            <a href="Triplets_of_Belleville.html">The triplets of Belleville</a>
+          </li>
+
+          <li>
+            <img src="/public/icons/icon_book.svg" alt="Icone book">
+            <a href="Brown_morning.html">Brown morning</a>
+          </li>
+
+          <li>
+            <img src="/public/icons/icon_location.svg" alt="Icone location">
+            <a href="Deep_Dive_Dubai.html">Deep Dive Dubai</a>
+          </li>
+
+          <li>
+            <img src="/public/icons/icon_hope.svg" alt="Icone hope">
+            <a href="Teleworking.html">Teleworking</a>
+          </li>
+            
+          <li>
+            <img src="/public/icons/icon_regret.svg" alt="Icone regret">
+            <a href="the_notion_of_time.html">The notion of time</a>
+          </li>
+        </ul>
+      </div>
+          <div class="menu_section_jaune">
+              <ul>
+                <li>
+                  <a href="Contact.html">• CONTACT</a>
+                </li>
+
+                <li>
+                  <a href="Other_projects.html">• OTHER PROJECTS </a>
+                </li>
+                  
+                <li>
+                <a href="About.html"> • ABOUT</a>
+                </li>
+                <hr>
+              </ul>
+              
+              <div class="menu_jaune_option">
+                  <a href="../eng/index.html" onclick="document.cookie = 'nf_lang=eng; path=/'"><img src="/public/icons/ENG_icon.svg" alt="Clickable icon to change the language to english" ></a>
+                  <a href="../fr/index.html" onclick="document.cookie = 'nf_lang=fr; path=/'"><img src="/public/icons/FR_icon.svg" alt="Clickable icon to change the language to french"></a>
+                  <a href="Glossary.html" class="glossaire">   GLOSSARY </a>
+              </div>
+        </div>
+    </div>
+   </nav>
+
+  <!-- Fin menu-->
+  <div class="main_article">
      <h1>The ball of the end</h1>
-     
-        The project <b>Everywhere at the end of time de The Caretaker</b> is a musical enigma. 
-        This journey to the complete loss of memory makes us lose our memory and our bearings.
-        <img src="/public/img/Everywhere_at_the_end_of_time.webp" alt="Cover picture for the album Everywhere At the end of time">
+        <div class="chapo_musique"> 
+            The project <b>Everywhere at the end of time de The Caretaker</b> is a musical enigma. 
+            This journey to the complete loss of memory makes us lose our memory and our bearings.
+            <audio id="audio">
+                <source src="/public/audio/All_that_follows_is_true.mp3">
+              </audio>
+              <button id="playPauseBTN" onclick="playPause()" alt="Clickable button to play the music"><img src="/public/icons/Volume.svg"> LISTEN </button>
+                <!-- Audio-->
+                      <script>
+                            var audio = document.getElementById('audio')
+                            var playPauseBTN = document.getElementById('playPauseBTN')
+                            var count= 0; 
+    
+                              function playPause(){
+                              if(count == 0){
+                              count = 1;
+                              audio_2.pause();
+                              audio.play();
+                              }else{
+                              count = 0;
+                              audio.pause();
+                            }
+                          }                     
+                    </script>
+                <!-- Fin Audio-->
+            </div>
+        <div class = "article_text">
+        
+                <img src="/public/img/Everywhere_at_the_end_of_time.webp" alt="Cover picture for the album Everywhere At the end of time" id="image_chapo_musique">
 
-    <button>LISTEN</button>
+            <p>
+                Time flies by. Sometimes the past pursues us, the present escapes us and the future makes us anxious.
+                <a href="https://leylandkirby.bandcamp.com/" class="link">Leyland Kirby</a> takes us through a labyrinth of time with his album <i>Everywhere at The End of Time.</i> 
+                under the name The Caretaker.
+                This British composer has created a timeless work that spans six parts released between 2016 and 2019. 
+                Thus, the project represents 6 and a half hours of listening in total and mixes sound experiments, collages and <a href="Glossaire.html" class="mot_glossaire"> noise music. 
+                <img src="/public/icons/i_info.svg" alt="clickable icon to access the glossary and the definition of 'music noise'"></a> 
+            </p> 
 
-    <p>
-        Time flies by. Sometimes the past pursues us, the present escapes us and the future makes us anxious.
-        <a href="https://leylandkirby.bandcamp.com/">Leyland Kirby</a> takes us through a labyrinth of time with his album Everywhere at The End of Time. 
-        under the name The Caretaker.
-        This British composer has created a timeless work that spans six parts released between 2016 and 2019. 
-        Thus, the project represents 6 and a half hours of listening in total and mixes sound experiments, collages and noise music. 
-        <a href="Glossaire.html"> <img src="/public/icons/i_info.svg" alt="clickable icon to access the glossary and the definition of 'music noise'"></a> 
-    </p> 
+            <img src="/public/img/Everywhere_at_the_end_of_time_covers.webp" alt="Illustrations of the album Everywhere at the end of time" class="Image_article">
+                <h3>Paintings by Ivan Seal illustrating each episode of Everywhere at the End of Time</h3> 
 
-    <img src="/public/img/Everywhere_at_the_end_of_time_covers.webp" alt="Illustrations of the album Everywhere at the end of time">
-    Paintings by Ivan Seal illustrating each episode of
-    Everywhere at the End of Time 
+            <h2>The nostalgia of the 1930s</h2>
+            <p>
+                The nostalgia of the 30s both in content and form, this album addresses the 
+                <b>themes of time and the deterioration of memory until the complete destruction of oneself</b>.
+                Inspired by the haunted ball scene from
+                <a href="https://youtu.be/5Cb3ik6zP2I" class="link">The Shining</a>
+                by 
+                <a href="https://kubrick.life/" class="link"> Stanley Kubrick</a>
+                , Leyland Kirby will bring the memories of ghosts of the past to life one last time.  
+                They notably uses soundtracks from the 1930s and 1940s that they will rework.
+            </p>
 
-    <h2>The nostalgia of the 1930s</h2>
-    <p>
-        The nostalgia of the 30s both in content and form, this album addresses the 
-        <b>themes of time and the deterioration of memory until the complete destruction of oneself</b>.
-        Inspired by the haunted ball scene from
-        <a href="https://youtu.be/5Cb3ik6zP2I">The Shining</a>
-        by 
-        <a href="https://kubrick.life/">Stanley Kubrick</a>
-        , Leyland Kirby will bring the memories of ghosts of the past to life one last time.  
-        They notably uses soundtracks from the 1930s and 1940s that they will rework.
-    </p>
+            <img src="/public/img/The_shining.webp" alt="Picture from the ball scene in The Shining." class="Image_article"  id="red">
+                <h3>Ball scene from The Shining</h3>
 
-    <img src="/public/img/The_shining.webp" alt="Picture from the ball scene in The Shining.">
-    Ball scene from The Shining
+            <h2>Between memory and forgetfulness</h2>
+            <p>
+                All that follows is true is one of the songs that starts the album. It’s one of the most powerful compositions.
+                Indeed, it marks the transition from the first to the second stage towards forgetfulness and madness. 
+                The artist has mixed the sweetness of a nostalgic music, that of
+                <a href="https://en.wikipedia.org/wiki/Maurice_Winnick" class="link">Maurice Winnick</a>
+                ( It Looks Like Rain In Cherry Blossom Lane -1932) and static noises, repetitions, ruptures.
+                This mixture creates a feeling of unease while keeping the calm and reassuring aspect of nostalgia.  
+            </p>
 
-    <h2>Between memory and forgetfulness</h2>
-    <p>
-        All that follows is true is one of the songs that starts the album. It’s one of the most powerful compositions.
-        Indeed, it marks the transition from the first to the second stage towards forgetfulness and madness. 
-        The artist has mixed the sweetness of a nostalgic music, that of
-        <a href="https://en.wikipedia.org/wiki/Maurice_Winnick">Maurice Winnick</a>
-        ( It Looks Like Rain In Cherry Blossom Lane -1932) and static noises, repetitions, ruptures.
-        This mixture creates a feeling of unease while keeping the calm and reassuring aspect of nostalgia.  
-    </p>
+            <audio id="audio_2">
+                <source src="/public/audio/it_looks_like_rain_in_cherry_blossom_lane.mp3">
+              </audio>
+              <button id="playPauseBTN_2" onclick="playPause_2()" alt="Clickable button to play the music"><img src="/public/icons/Volume.svg"> LISTEN </button>
+                <!-- Audio-->
+                      <script>
+                              var audio_2 = document.getElementById('audio_2')
+                              var playPauseBTN = document.getElementById('playPauseBTN_2')
+                              var count= 0; 
+                                function playPause_2(){
+                                if(count == 0){
+                                count = 1;
+                                audio.pause();
+                                audio_2.play();
+                              }else{
+                                count = 0;
+                                audio_2.pause();
+                              } 
+                            }        
+                                                
+                    </script>
+                <!-- Fin Audio-->
 
-    <img src="/public/img/It_looks_like_rain_in_cherry_blossom_lane.webp" alt="picture of the disc it looks like rain in cherry blossom lane">
-    Music disc of It looks like rain in cherry blossom lane
+            <img src="/public/img/It_looks_like_rain_in_cherry_blossom_lane.webp" alt="picture of the disc it looks like rain in cherry blossom lane" class="Image_article">
+                <h3>Music disc of It looks like rain in cherry blossom lane</h3>
 
-    <p>
-        <b>Leyland Kirby gives birth to music that is both familiar and unknown.</b> 
-        He takes us to the border between memory and forgetfulness.  
-    </p>
+            <p>
+                <b>Leyland Kirby gives birth to music that is both familiar and unknown.</b> He takes us to the border between memory and forgetfulness.  
+            </p>
 
-    <img src="/public/icons/button_scroll_up.svg" alt="clickable button to go back to the top of the page">
+        <a href="#" class="top"><img src="/public/icons/button_scroll_up.svg" alt="bouton cliquable pour retourner en haut de la page"></a>
+
+  <!-- Footer-->
+
+  
+      <footer> 
+        <div class="footer_main"> 
+            <div class="footer_text"> 
+                <p>Aline ROSE MMI 1 &#150 C1</p>
+                <a href="mailto:alinerose262003@gmail.com"> alinerose262003@gmail.com </a>
+                  <div class="footer_icon"> 
+                      <p>Project realized in an educational exercise in the
+                      <a href="http://mmimontbeliard.com/contact">  MMI department of Montbéliard </a></p>
+                      <img src="/public/icons/logo_MMI.svg" alt="MMI de Montbéliard Logo">
+                  </div>
+            </div>
+         </div>
+      </footer>
+
+  <!-- Fin Footer-->
+  
 
 </body>

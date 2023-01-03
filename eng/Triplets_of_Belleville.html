@@ -1,57 +1,327 @@
 <!DOCTYPE html>
-<html lang="en">
- 
+<html lang="en" x-data="{menuIsOpen: false}" :class=""{noscroll:menuIsOpen,}>
+
 <head>
-    <title>The Triplets of Belleville</title>  
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tiplets of Belleville - The Flow of Time</title>
+  <link rel="stylesheet" href="/src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+
 </head>
 
-<body>  
+<body id="article">
+
+  <!-- Header-->
+
+    <header class="header">
+      <a href="index.html" class="headertext"> The flow of Time</a>
+      <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
+          <img src="/public/icons/menu_icon.webp" alt="Clickable icon to access the menu">
+        </button> 
+      </div>
+    </header>
+  <!-- Fin Header-->
+
+  <!-- Menu -->
+
+    <nav id="mainNav"  
+        class="menu" :class="menuIsOpen && 'menu--open'"
+    >
+    <div class="menu_article">
+      <ul>
+        <li>
+            <img src="/public/icons/Accueil_icon.svg" alt="Icon to go back to the homepage" >
+            <a href="index.html">Accueil</a>
+          </li>
+
+          <li>
+            <img src="/public/icons/icon_music.svg" alt="Icone music">
+            <a href="Everywhere_at_the_end_of_time.html">Everywhere at the end of time</a>
+          </li>
+            
+          <li>
+            <img src="/public/icons/icon_movie.svg" alt="Icone movie">
+            <a href="Triplets_of_Belleville.html">The triplets of Belleville</a>
+          </li>
+
+          <li>
+            <img src="/public/icons/icon_book.svg" alt="Icone book">
+            <a href="Brown_morning.html">Brown morning</a>
+          </li>
+
+          <li>
+            <img src="/public/icons/icon_location.svg" alt="Icone location">
+            <a href="Deep_Dive_Dubai.html">Deep Dive Dubai</a>
+          </li>
+
+          <li>
+            <img src="/public/icons/icon_hope.svg" alt="Icone hope">
+            <a href="Teleworking.html">Teleworking</a>
+          </li>
+            
+          <li>
+            <img src="/public/icons/icon_regret.svg" alt="Icone regret">
+            <a href="the_notion_of_time.html">The notion of time</a>
+          </li>
+        </ul>
+      </div>
+          <div class="menu_section_jaune">
+              <ul>
+                <li>
+                  <a href="Contact.html">• CONTACT</a>
+                </li>
+
+                <li>
+                  <a href="Other_projects.html">• OTHER PROJECTS </a>
+                </li>
+                  
+                <li>
+                <a href="About.html"> • ABOUT</a>
+                </li>
+                <hr>
+              </ul>
+              
+              <div class="menu_jaune_option">
+                  <a href="../eng/index.html" onclick="document.cookie = 'nf_lang=eng; path=/'"><img src="/public/icons/ENG_icon.svg" alt="Clickable icon to change the language to english" ></a>
+                  <a href="../fr/index.html" onclick="document.cookie = 'nf_lang=fr; path=/'"><img src="/public/icons/FR_icon.svg" alt="Clickable icon to change the language to french"></a>
+                  <a href="Glossary.html" class="glossaire">   GLOSSARY </a>
+              </div>
+        </div>
+    </div>
+   </nav>
+
+  <!-- Fin menu-->
+
+  <div class="main_article">
 
   <h1>A wacky era</h1>
-  <img src="/public/img/Video_cover.webp" alt="Clickable picture to start the video">
 
-  This film takes us into 
-  <b>a delusional and nostalgic world </b>
-  by following the misadventures of a strange team of four grannies, their dog and a melancholic cyclist.
+  <div class="chapo">
+    <p>
+      This film takes us into 
+      <b>a delusional and nostalgic world </b>
+      by following the misadventures of a strange team of four grannies, their dog and a melancholic cyclist.
+    </p>
+  </div>
+  <video controls="false" autoplay="autoplay" poster="/public/img/Video_cover.webp"  alt="Image cliquable pour lancer la vidéo" id="image_chapo"><source src="/public/video/Triplette_de_belleville.mp4" type="video/mp4"></video>
 
-  <p>
-    The Triplets of Belleville were released in 2003. This animated film directed by
-    <a href="https://sylvainchomet.com/sylvain-chomet/">Sylvain Chomet</a> 
-    gets several awards and nominations. 
-    However, this animation is not really intended for children. 
-    In France in the 1950s, we follow the adventures of Grandma Suza and her orphaned grandson, Champion.
-    In the company of their big dog Bruno, she will push him in his passion for cycling, until they reach the roads of the Tour de France.
-    Mysterious bandits will then kidnap him to take him to the United States. 
-    Facing all the dangers, his grandmother goes to rescue him with the help of three former stars of the 1930s, the Triplets of Belleville. 
-  </p>
+  <div class ="article_text">
 
-  <img src="/public/img/affiche_les_triplettes_de_belleville.webp" alt="Cover for the Triplet of Belleville">
-  Poster for the film The Triplets of Bellevilles
+    <p>
+      The Triplets of Belleville were released in 2003. This animated film directed by <a href="https://sylvainchomet.com/sylvain-chomet/" class="link">Sylvain Chomet</a> gets several awards and nominations. 
+      However, this animation is not really intended for children. 
+      In France in the 1950s, we follow the adventures of Grandma Suza and her orphaned grandson, Champion.
+      In the company of their big dog Bruno, she will push him in his passion for cycling, until they reach the roads of the Tour de France.
+      Mysterious bandits will then kidnap him to take him to the United States. 
+      Facing all the dangers, his grandmother goes to rescue him with the help of three former stars of the 1930s, the Triplets of Belleville. 
+    </p>
 
-  <h2>A strange world</h2>
-  <p>
-    This story is an amazing and <b>indescribable mix: humour, worry, joy, repulsion…</b> 
-    It plunges us into a nostalgic universe full of references with a melancholic tone. 
-    The animation takes us into a very special world that mixes imagination and reality: the cities of New York and Montreal.
-    In addition, personalities are sometimes grotesque, caricatural but always endearing. 
-    The virtual absence of dialogue brings out their expressiveness.
-  </p>
+    <img src="/public/img/affiche_les_triplettes_de_belleville.webp" alt="Cover for the Triplet of Belleville" class="Image_article">
+      <h3>Poster for the film The Triplets of Bellevilles</h3>
 
-  <img src="/public/img/capture_ecran.webp" alt="Screenshot of the start of the movie">
-  Start of the film the Triplets of Belleville, with granny Suza, her grandson Champion and their dog Bruno.
+    <h2>A strange world</h2>
+    <p>
+      This story is an amazing and <b>indescribable mix: humour, worry, joy, repulsion…</b> 
+      It plunges us into a nostalgic universe full of references with a melancholic tone. 
+      The animation takes us into a very special world that mixes imagination and reality: the cities of New York and Montreal.
+      In addition, personalities are sometimes grotesque, caricatural but always endearing. 
+      The virtual absence of dialogue brings out their expressiveness.
+    </p>
 
-  <h2>The wheel of time</h2>
-  <p>
-    In addition, under the amusement this film invites us  to reflect on time: 
-    <b>the impacts of our past on our present</b>
-    like the passion of Champion of bike that comes from a memory of his parents or the phobia of trains of the dog Bruno that comes from an ancient trauma.
-    In conclusion, time turns and advances like a bicycle wheel.
-    The era of the Triplettes still shows its faded splendors and ends in apotheosis with a dazzling chase.
-  </p>
+    <img src="/public/img/capture_ecran.webp" alt="Screenshot of the start of the movie" class="Image_article" id="red">
+      <h3>Start of the film the Triplets of Belleville, with granny Suza, her grandson Champion and their dog Bruno.</h3>
 
-  <img src="/public/icons/button_scroll_up.svg" alt="clickable button to go back to the top of the page">
+    <h2>The wheel of time</h2>
+    <p>
+      In addition, under the amusement this film invites us  to reflect on time: 
+      <b>the impacts of our past on our present</b>
+      like the passion of Champion of bike that comes from a memory of his parents or the phobia of trains of the dog Bruno that comes from an ancient trauma.
+      In conclusion, time turns and advances like a bicycle wheel.
+      The era of the Triplettes still shows its faded splendors and ends in apotheosis with a dazzling chase.
+    </p>
+
+  <a href="#" class="top"><img src="/public/icons/button_scroll_up.svg" alt="clickable button to go back to the top of the page"></a>
+
+  <div class="filmographie">
+    <h1>Filmography & Other productions</h1>
+      <div class="filmographie_introduction">
+        <p>
+          Sylvain Chomet is a French cartoonist, screenwriter and composer. This graduate of the Beaux-Arts of Angoulême has won numerous awards and Oscars, including the gold star of French cinema, the Genie award for best film, the European Film Grand Prix and the César for the best animated film.
+        </p>
+      </div>
+
+        <!-- Carousel-->
+          <div class="carousel_filmographie" x-data="{}">
+            <div class="carrousel_parent-ecrans" x-ref="parent">
+                
+              <div class="carrousel_ecran">
+                  <div class="carrousel_btn_countainer">
+                    <button class="carrousel_btn_red carrousel_btn-apres_red" aria-label="slide suivant" @click ="$refs.parent.scrollLeft += $refs.parent.clientWidth" ></button>
+                  </div>
+                    <figure>
+                        <img src="/public/img/Filmographie_(6).webp" alt="Image de La vieille dame et les pigeons" class="img_carousel">
+                        <figcaption>
+                          <div class="carousel_circle">
+                            <div class="filmograghie_text">
+                              <h2>1998</h2>
+                              <span class="filmograghie_big_text">The Old Lady and the Pigeons</span>
+                              <hr class="filmograpgie_ligne_hr">
+                              <p>Animated short film</p>
+                            </div>
+                          </div>    
+                     </figcaption> 
+                    </figure>
+                </div>
+        
+                <div class="carrousel_ecran">
+                  <div class="carrousel_btn_countainer">
+                    <button class="carrousel_btn_red carrousel_btn-avant_red" aria-label="slide précedant" @click ="$refs.parent.scrollLeft -= $refs.parent.clientWidth" ></button>
+                    <button class="carrousel_btn_red carrousel_btn-apres_red" aria-label="slide suivant" @click ="$refs.parent.scrollLeft += $refs.parent.clientWidth" ></button>
+                  </div>
+                    <figure>
+                        <img src="/public/img/Film.webp" alt="Picture of the Triplets of Belleville" class="img_carousel">
+                        <figcaption>
+                          <div class="carousel_circle">
+                            <div class="filmograghie_text">
+                              <h2>2003</h2>
+                              <span class="filmograghie_big_text">The Triplets of Belleville</span>
+                              <hr class="filmograpgie_ligne_hr">
+                              <p>Animated movie</p>
+                        </div>
+                      </div>   
+                        </figcaption>
+                    </figure>
+                </div>
+        
+                <div class="carrousel_ecran">
+                  <div class="carrousel_btn_countainer">
+                    <button class="carrousel_btn_red carrousel_btn-avant_red" aria-label="slide précedant" @click ="$refs.parent.scrollLeft -= $refs.parent.clientWidth" ></button>
+                    <button class="carrousel_btn_red carrousel_btn-apres_red" aria-label="slide suivant" @click ="$refs.parent.scrollLeft += $refs.parent.clientWidth" ></button>
+                  </div>
+                    <figure>
+                        <img src="/public/img/Filmographie_(3).webp" alt="Picture of Paris, I love you" class="img_carousel">
+                        <figcaption>
+                          <div class="carousel_circle">
+                            <div class="filmograghie_text">
+                              <h2>2006</h2>
+                              <span class="filmograghie_big_text">Paris, I Love You</span>
+                              <hr class="filmograpgie_ligne_hr">
+                              <p>Dramatic comedy</p>
+                        </div>
+                      </div>   
+                        </figcaption>
+                    </figure>
+                </div>
+        
+                <div class="carrousel_ecran">
+                  <div class="carrousel_btn_countainer">
+                    <button class="carrousel_btn_red carrousel_btn-avant_red" aria-label="slide précedant" @click ="$refs.parent.scrollLeft -= $refs.parent.clientWidth" ></button>
+                    <button class="carrousel_btn_red carrousel_btn-apres_red" aria-label="slide suivant" @click ="$refs.parent.scrollLeft += $refs.parent.clientWidth" ></button>
+                  </div>
+                    <figure>
+                        <img src="/public/img/Filmographie_(4).webp" alt="Picture of The Illusionist" class="img_carousel">
+                        <figcaption>
+                          <div class="carousel_circle">
+                            <div class="filmograghie_text">
+                              <h2>2010</h2>
+                              <span class="filmograghie_big_text">The Illusionist</span>
+                              <hr class="filmograpgie_ligne_hr">
+                              <p>Animated movie</p>
+                        </div>
+                      </div>   
+                        </figcaption>
+                    </figure>
+                </div>
+        
+                <div class="carrousel_ecran" class="icon_carousel">
+                  <div class="carrousel_btn_countainer">
+                    <button class="carrousel_btn_red carrousel_btn-avant_red" aria-label="slide précedant" @click ="$refs.parent.scrollLeft -= $refs.parent.clientWidth" ></button>
+                    <button class="carrousel_btn_red carrousel_btn-apres_red" aria-label="slide suivant" @click ="$refs.parent.scrollLeft += $refs.parent.clientWidth" ></button>
+                  </div>
+                    <figure>
+                        <img src="/public/img/Filmographie_(5).webp" alt="Picture of Atilla marcel" class="img_carousel">
+                        <figcaption>
+                          <div class="carousel_circle">
+                            <div class="filmograghie_text">
+                              <h2>2013</h2>
+                              <span class="filmograghie_big_text">Atilla marcel</span>
+                              <hr class="filmograpgie_ligne_hr">
+                              <p>Musical comedy</p>
+                        </div>
+                      </div>   
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="carrousel_ecran">
+                  <div class="carrousel_btn_countainer">
+                    <button class="carrousel_btn_red carrousel_btn-avant_red" aria-label="slide précedant" @click ="$refs.parent.scrollLeft -= $refs.parent.clientWidth" ></button>
+                    <button class="carrousel_btn_red carrousel_btn-apres_red" aria-label="slide suivant" @click ="$refs.parent.scrollLeft += $refs.parent.clientWidth" ></button>
+                  </div>
+                    <figure>
+                        <img src="/public/img/Filmographie_(1).webp" alt="Picture of thank you mister imada" class="img_carousel">
+                        <figcaption>
+                          <div class="carousel_circle">
+                            <div class="filmograghie_text">
+                              <h2>2016</h2>
+                              <span class="filmograghie_big_text">Thank You Mister Imada</span>
+                              <hr class="filmograpgie_ligne_hr">
+                              <p>Short film</p>
+                        </div>
+                      </div>   
+                        </figcaption>
+                    </figure>
+                </div>
+        
+        
+                <div class="carrousel_ecran">
+                  <div class="carrousel_btn_countainer">
+                    <button class="carrousel_btn_red carrousel_btn-avant_red" aria-label="slide précedant" @click ="$refs.parent.scrollLeft -= $refs.parent.clientWidth" ></button>
+                  </div>
+                  <figure>
+                      <img src="/public/img/Filmographie_(2).webp" alt="Picture of the clip carmen by stromae" class="img_carousel">
+                      <figcaption>
+                        <div class="carousel_circle">
+                          <div class="filmograghie_text">
+                            <h2>2015</h2>
+                            <span class="filmograghie_big_text">Stromae  Carmen</span>
+                            <hr class="filmograpgie_ligne_hr">
+                            <p>Animation of a musical clip</p>
+                      </div>
+                    </div>    
+                      </figcaption>
+                  </figure>
+              </div>
+              </div> 
+            </div>
+
+        <!-- Fin Carousel-->
+
+        <a href="#" class="top" id="top_filmographie"><img src="/public/icons/button_scroll_up_1.svg" alt="clickable button to go back to the top of the page"></a>
+
+    </div> 
+
+  </div>
+
+  <!-- Footer-->
+
+  
+  <footer> 
+    <div class="footer_main"> 
+        <div class="footer_text"> 
+            <p>Aline ROSE MMI 1 &#150 C1</p>
+            <a href="mailto:alinerose262003@gmail.com"> alinerose262003@gmail.com </a>
+              <div class="footer_icon"> 
+                  <p>Project realized in an educational exercise in the
+                  <a href="http://mmimontbeliard.com/contact">  MMI department of Montbéliard </a></p>
+                  <img src="/public/icons/logo_MMI.svg" alt="MMI de Montbéliard Logo">
+              </div>
+        </div>
+     </div>
+  </footer>
+
+<!-- Fin Footer-->
 
 </body> 

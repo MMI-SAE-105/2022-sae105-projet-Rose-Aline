@@ -3,7 +3,7 @@
     background-image: url("/public/img/blue_wave_filmographie.Webp");
     background-repeat:no-repeat;
     background-size: cover; 
-    padding-bottom: 140%;
+    padding-bottom: 150%;
     top:60px
   }
 
@@ -96,5 +96,5 @@
 
   #top_filmographie{
     position:relative;
-    bottom:-480px
+    bottom:-500px
   }
