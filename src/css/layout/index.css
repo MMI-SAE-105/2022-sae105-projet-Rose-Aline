@@ -204,3 +204,8 @@ scroll-snap-align: start;
   font-family: 'Arvo';
   color: var(--black-text)
 }
+
+#button_up{
+  position:relative;
+  bottom:10px
+}
