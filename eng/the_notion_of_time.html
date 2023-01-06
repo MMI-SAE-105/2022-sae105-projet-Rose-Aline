@@ -1,57 +1,169 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" x-data="{menuIsOpen: false}" :class=""{noscroll:menuIsOpen,}>
 
 <head>
-  <title>The notion of time</title>   
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tiplets of Belleville - The Flow of Time</title>
+  <link rel="stylesheet" href="/src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+
 </head>
 
-<body> 
-      
-  <h1>The time to do nothing</h1>
+<body id="article">
 
-    <img src="/public/img/regret_image_(1).webp" alt="Picture of an hourglass on a table">
-    Always in a hurry, ultra-connected… <b>The generation of the 2000s has developed another notion of time</b>, but is it the right concept to build its future?
+  <!-- Header-->
 
-  <p>
-    We are the Generation Z 
-    <a href="Glossaire.html"> <img src="/public/icons/i_info.svg" alt="clickable icon to access the glossary and the definition of 'Generation Z'"></a> 
-    , born with the development of digital means: internet, smartphones.
-    Z for zapping, we have to deal with innumerable information, constant demands.
-    As a result, we naturally know how to read our notifications, consult our classes’s notes and listen to our favorite singer’s latest album at the same time. 
-    <b>Today, one news story erases another.</b>
-    A global pandemic is almost forgotten when a new conflict occurs, which itself will fade behind another buzz or scandal.
- 
-  </p>
+    <header class="header">
+      <a href="index.html" class="headertext"> The flow of Time</a>
+      <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
+          <img src="/public/icons/menu_icon.webp" alt="Clickable icon to access the menu">
+        </button> 
+      </div>
+    </header>
+  <!-- Fin Header-->
+
+  <!-- Menu -->
+
+    <nav id="mainNav"  
+        class="menu" :class="menuIsOpen && 'menu--open'"
+    >
+    <div class="menu_article">
+      <ul>
+        <li>
+            <img src="/public/icons/Accueil_icon.svg" alt="Icon to go back to the homepage" >
+            <a href="index.html">Homepage</a>
+          </li>
+
+          <li>
+            <img src="/public/icons/icon_music.svg" alt="Icone music">
+            <a href="Everywhere_at_the_end_of_time.html">Everywhere at the end of time</a>
+          </li>
+            
+          <li>
+            <img src="/public/icons/icon_movie.svg" alt="Icone movie">
+            <a href="Triplets_of_Belleville.html">The triplets of Belleville</a>
+          </li>
+
+          <li>
+            <img src="/public/icons/icon_book.svg" alt="Icone book">
+            <a href="Brown_morning.html">Brown morning</a>
+          </li>
+
+          <li>
+            <img src="/public/icons/icon_location.svg" alt="Icone location">
+            <a href="Deep_Dive_Dubai.html">Deep Dive Dubai</a>
+          </li>
+
+          <li>
+            <img src="/public/icons/icon_hope.svg" alt="Icone hope">
+            <a href="Teleworking.html">Teleworking</a>
+          </li>
+            
+          <li>
+            <img src="/public/icons/icon_regret.svg" alt="Icone regret">
+            <a href="the_notion_of_time.html">The notion of time</a>
+          </li>
+        </ul>
+      </div>
+          <div class="menu_section_jaune">
+              <ul>
+                <li>
+                  <a href="Contact.html">• CONTACT</a>
+                </li>
+
+                <li>
+                  <a href="Other_projects.html">• OTHER PROJECTS </a>
+                </li>
+                  
+                <li>
+                <a href="About.html"> • ABOUT</a>
+                </li>
+                <hr>
+              </ul>
+              
+              <div class="menu_jaune_option">
+                  <a href="../eng/index.html" onclick="document.cookie = 'nf_lang=eng; path=/'"><img src="/public/icons/ENG_icon.svg" alt="Clickable icon to change the language to english" ></a>
+                  <a href="../fr/index.html" onclick="document.cookie = 'nf_lang=fr; path=/'"><img src="/public/icons/FR_icon.svg" alt="Clickable icon to change the language to french"></a>
+                  <a href="Glossary.html" class="glossaire">   GLOSSARY </a>
+              </div>
+        </div>
+    </div>
+   </nav>
+
+  <!-- Fin menu-->
+  <div class="main_article">
+
+    <h1>The time to do nothing</h1>
+    <div class="chapo"> 
+      <p>
+        Always in a hurry, ultra-connected… 
+        <b>The generation of the 2000s has developed another notion of time</b>,
+        but is it the right concept to build its future?
+      </p>
+    </div>
+      <img src="/public/img/regret_image_(1).webp" alt="Picture of an hourglass on a table" id="image_chapo">
+
+      <div class ="article_text">
+        <p>
+          We are the  
+          <a href="Glossaire.html" class="mot_glossaire"> Generation Z <img src="/public/icons/i_info.svg" alt="clickable icon to access the glossary and the definition of 'Generation Z'" ></a> 
+          , born with the development of digital means: internet, smartphones.
+          Z for zapping, we have to deal with innumerable information, constant demands.
+          As a result, we naturally know how to read our notifications, consult our classes’s notes and listen to our favorite singer’s latest album at the same time. 
+          <b>Today, one news story erases another.</b>
+          A global pandemic is almost forgotten when a new conflict occurs, which itself will fade behind another buzz or scandal.
+        </p>
+          
+        <img src="/public/img/regret_image_(2).webp" alt="Picture of a person asleep near an hourglass" class="Image_article">
+          
+        <h2>A fast-track society</h2>
+        <p>
+          Overall, the society around us pushes us to always go fast, to decide now and immediately. 
+          Win  competitions, our duties, our future professional life…
+          This avalanche of objectives actually prevents us from taking the time to do nothing.
+          The philosopher  
+          <a href="https://www.academie-francaise.fr/les-immortels/paul-valery" class="link">Paul Valéry</a> 
+          (1871 – 1945) wrote,  
+          “We can no longer bear the duration. We can no longer fertilize boredom. Our nature abhors emptiness, the emptiness on which the spirits of yesteryear knew how to paint the images of their ideals, their ideas…”
+          <b>The time to do nothing no longer exists.</b> 
+          The pressure of social networks crushes and encompasses all free time.
+          However, we often have the impression of having wasted our time!
+        </p>
+          
+          <img src="/public/img/regret_image_(3).webp" alt="Picture of an annoyed person holding a phone" class="Image_article" id="red">
+          
+        <h2>Not moving at the same pace</h2>
+        <p>
+          Childhood can seem long and boring. Nevertheless, it will no longer be possible to find these times of reflection to invent a tomorrow.
+          <b>Our generation is in a hurry to grow up right away</b>
+          at the risk of feeling old before the hour with this unpleasant feeling of running after time.
+          We want to do everything now: succeed in our professional, social life, save the planet, revolutionize the future...
+          To the extent that we are slower than others, it can sometimes be difficult to keep pace with society and thus meet the expected standards.  
+        </p>   
     
-  <img src="/public/img/regret_image_(2).webp" alt="Picture of a person asleep near an hourglass">
-    
-  <h2>A fast-track society</h2>
-  <p>
-    Overall, the society around us pushes us to always go fast, to decide now and immediately. 
-    Win  competitions, our duties, our future professional life…
-    This avalanche of objectives actually prevents us from taking the time to do nothing.
-    The philosopher  
-    <a href="https://www.academie-francaise.fr/les-immortels/paul-valery">Paul Valéry</a> 
-    (1871 – 1945) wrote,  
-    “We can no longer bear the duration. We can no longer fertilize boredom. Our nature abhors emptiness, the emptiness on which the spirits of yesteryear knew how to paint the images of their ideals, their ideas…”
-    <b>The time to do nothing no longer exists.</b> 
-    The pressure of social networks crushes and encompasses all free time.
-    However, we often have the impression of having wasted our time!
-  </p>
-    
-    <img src="/public/img/regret_image_(3).webp" alt="Picture of an annoyed person holding a phone">
-    
-  <h2>Not moving at the same pace</h2>
-  <p>
-    Childhood can seem long and boring. Nevertheless, it will no longer be possible to find these times of reflection to invent a tomorrow.
-    <b>Our generation is in a hurry to grow up right away</b>
-    at the risk of feeling old before the hour with this unpleasant feeling of running after time.
-    We want to do everything now: succeed in our professional, social life, save the planet, revolutionize the future...
-    To the extent that we are slower than others, it can sometimes be difficult to keep pace with society and thus meet the expected standards.  
-  </p>   
-    
-  <img src="/public/icons/button_scroll_up.svg" alt="clickable button to go back to the top of the page"></body> 
-</body> 
+        <a href="#" class="top"><img src="/public/icons/button_scroll_up.svg" alt="clickable button to go back to the top of the page"></a>
+      </div> 
+    </div>
+  <!-- Footer-->
+
+  
+      <footer> 
+        <div class="footer_main"> 
+            <div class="footer_text"> 
+                <p>Aline ROSE MMI 1 &#150 C1</p>
+                <a href="mailto:alinerose262003@gmail.com"> alinerose262003@gmail.com </a>
+                  <div class="footer_icon"> 
+                      <p>Project realized in an educational exercise in the
+                      <a href="http://mmimontbeliard.com/contact">  MMI department of Montbéliard </a></p>
+                      <img src="/public/icons/logo_MMI.svg" alt="MMI de Montbéliard Logo">
+                  </div>
+            </div>
+         </div>
+      </footer>
+
+  <!-- Fin Footer-->
+  
+
+</body>
