@@ -1,37 +1,156 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" x-data="{menuIsOpen: false}" :class=""{noscroll:menuIsOpen,}>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glossary</title>   
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glossary - The Flow of Time</title>
+  <link rel="stylesheet" href="/src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+
 </head>
 
 
-<body>
+
+<body id="pages_autres">
+
+    <!-- Header-->
+  
+      <header class="header">
+        <a href="index.html" class="headertext"> The flow of Time</a>
+        <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
+            <img src="/public/icons/menu_icon.webp" alt="Clickable icon to access the menu">
+          </button> 
+        </div>
+      </header>
+    <!-- Fin Header-->
+  
+    <!-- Menu -->
+  
+      <nav id="mainNav"  
+          class="menu" :class="menuIsOpen && 'menu--open'"
+      >
+        <ul>
+          <li>
+              <img src="/public/icons/Accueil_icon.svg" alt="Icon to go back to the homepage" >
+              <a href="index.html">Homepage</a>
+            </li>
+  
+            <li>
+              <img src="/public/icons/icon_music.svg" alt="Icon music">
+              <a href="Everywhere_at_the_end_of_time.html">Everywhere at the end of time</a>
+            </li>
+              
+            <li>
+              <img src="/public/icons/icon_movie.svg" alt="Icon movie">
+              <a href="Triplets_of_Belleville.html">The triplets of Belleville</a>
+            </li>
+  
+            <li>
+              <img src="/public/icons/icon_book.svg" alt="Icon book">
+              <a href="Brown_morning.html">Brown morning</a>
+            </li>
+  
+            <li>
+              <img src="/public/icons/icon_location.svg" alt="Icon location">
+              <a href="Deep_Dive_Dubai.html">Deep Dive Dubai</a>
+            </li>
+  
+            <li>
+              <img src="/public/icons/icon_hope.svg" alt="Icon hope">
+              <a href="Teleworking.html">Teleworking</a>
+            </li>
+              
+            <li>
+              <img src="/public/icons/icon_regret.svg" alt="Icon regret">
+              <a href="the_notion_of_time.html">The notion of time</a>
+            </li>
+          </ul>
+        </div>
+            <div class="menu_section_jaune">
+                <ul>
+                  <li>
+                    <a href="Contact.html">• CONTACT</a>
+                  </li>
+  
+                  <li>
+                    <a href="Other_projects.html">• OTHER PROJECTS </a>
+                  </li>
+                    
+                  <li>
+                  <a href="About.html"> • ABOUT</a>
+                  </li>
+                  <hr>
+                </ul>
+                
+                <div class="menu_jaune_option">
+                    <a href="../eng/index.html" onclick="document.cookie = 'nf_lang=eng; path=/'"><img src="/public/icons/ENG_icon.svg" alt="Clickable icon to change the language to english" ></a>
+                    <a href="../fr/index.html" onclick="document.cookie = 'nf_lang=fr; path=/'"><img src="/public/icons/FR_icon.svg" alt="Clickable icon to change the language to french"></a>
+                    <a href="Glossary.html" class="glossaire">   GLOSSARY </a>
+                </div>
+          </div>
+      </div>
+     </nav>
+  
+    <!-- Fin menu-->
 
     <h1>Glossary</h1>
 
     <p>
             
         <b>Brown shirts</b>
-        The name given to the members of the German National Socialist Party, because of the colour of the uniform adopted by the party in 1925, has often been limited to the SA (paramilitary formations of the Nazi party).
-                    
-        <b> Generation Z</b>
-        The term designates the generation of people born between 1997 and 2010. It succeeds the Y generation and precedes the Alpha generation. It is defined as a generation born when digital communications were already well established in society.            
+        <p class="texte_pages_autres">
+            The name given to the members of the German National Socialist Party, because of the colour of the uniform adopted by the party in 1925, has often been limited to the SA (paramilitary formations of the Nazi party).
+        </p>
         
+            <hr class="hr_glossaire">
+        <b> Generation Z</b>
+        <p class="texte_pages_autres">
+            The term designates the generation of people born between 1997 and 2010. It succeeds the Y generation and precedes the Alpha generation. It is defined as a generation born when digital communications were already well established in society.            
+        </p>
+
+            <hr class="hr_glossaire">
         <b> Arcade Games</b>
-        Paid game played on public machines; especially action video game.
+        <p class="texte_pages_autres">
+            Paid game played on public machines; especially action video game.
+        </p>
 
+            <hr class="hr_glossaire">
         <b> Music noise </b>
-        English noise music brings together various musical genres and is characterized by the assembly of sounds commonly perceived as non musical (noises, non-harmonious sounds, etc.)
+        <p class="texte_pages_autres">
+            English noise music brings together various musical genres and is characterized by the assembly of sounds commonly perceived as non musical (noises, non-harmonious sounds, etc.)
+        </p>
 
+            <hr class="hr_glossaire">
         <b> Post-apocalyptic </b>
-        Which, in the anticipation stories, is located after a disaster that devastated the Earth. 
+        <p class="texte_pages_autres">
+            Which, in the anticipation stories, is located after a disaster that devastated the Earth. 
+        </p>
 
+            <hr class="hr_glossaire">
         <b>Totalitarianism </b>
-        Political system in which the state, in the name of an ideology, exerts a control over the totality of individual activities.
-    </p>
+        <p class="texte_pages_autres">
+            Political system in which the state, in the name of an ideology, exerts a control over the totality of individual activities.
+        </p>
 
+        <div class="glossaire_last"></div>
+  <!-- Footer-->
+
+  
+  <footer> 
+    <div class="footer_main"> 
+        <div class="footer_text"> 
+            <p>Aline ROSE MMI 1 &#150 C1</p>
+            <a href="mailto:alinerose262003@gmail.com"> alinerose262003@gmail.com </a>
+              <div class="footer_icon"> 
+                  <p>Project realized in an educational exercise in the
+                  <a href="http://mmimontbeliard.com/contact">  MMI department of Montbéliard </a></p>
+                  <img src="/public/icons/logo_MMI.svg" alt="MMI de Montbéliard Logo">
+              </div>
+        </div>
+     </div>
+  </footer>
+
+<!-- Fin Footer-->
 </body>

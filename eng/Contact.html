@@ -1,34 +1,132 @@
 <!DOCTYPE html>
-<html lang="fr">
- 
+<html lang="en" x-data="{menuIsOpen: false}" :class=""{noscroll:menuIsOpen,}>
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact</title>   
+  <title>Contact - The Flow of Time</title>
+  <link rel="stylesheet" href="/src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+
 </head>
 
-<body>
-  
+<body id="pages_autres">
+
+  <!-- Header-->
+
+    <header class="header">
+      <a href="index.html" class="headertext"> The flow of Time</a>
+      <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
+          <img src="/public/icons/menu_icon.webp" alt="Clickable icon to access the menu">
+        </button> 
+      </div>
+    </header>
+  <!-- Fin Header-->
+
+  <!-- Menu -->
+
+    <nav id="mainNav"  
+        class="menu" :class="menuIsOpen && 'menu--open'"
+    >
+    <div class="menu_article">
+      <ul>
+        <li>
+            <img src="/public/icons/Accueil_icon.svg" alt="Icon to go back to the homepage" >
+            <a href="index.html">Homepage</a>
+          </li>
+
+          <li>
+            <img src="/public/icons/icon_music.svg" alt="Icon music">
+            <a href="Everywhere_at_the_end_of_time.html">Everywhere at the end of time</a>
+          </li>
+            
+          <li>
+            <img src="/public/icons/icon_movie.svg" alt="Icon movie">
+            <a href="Triplets_of_Belleville.html">The triplets of Belleville</a>
+          </li>
+
+          <li>
+            <img src="/public/icons/icon_book.svg" alt="Icon book">
+            <a href="Brown_morning.html">Brown morning</a>
+          </li>
+
+          <li>
+            <img src="/public/icons/icon_location.svg" alt="Icon location">
+            <a href="Deep_Dive_Dubai.html">Deep Dive Dubai</a>
+          </li>
+
+          <li>
+            <img src="/public/icons/icon_hope.svg" alt="Icon hope">
+            <a href="Teleworking.html">Teleworking</a>
+          </li>
+            
+          <li>
+            <img src="/public/icons/icon_regret.svg" alt="Icon regret">
+            <a href="the_notion_of_time.html">The notion of time</a>
+          </li>
+        </ul>
+      </div>
+          <div class="menu_section_jaune">
+              <ul>
+                <li>
+                  <a href="Contact.html">• CONTACT</a>
+                </li>
+
+                <li>
+                  <a href="Other_projects.html">• OTHER PROJECTS </a>
+                </li>
+                  
+                <li>
+                <a href="About.html"> • ABOUT</a>
+                </li>
+                <hr>
+              </ul>
+              
+              <div class="menu_jaune_option">
+                  <a href="../eng/index.html" onclick="document.cookie = 'nf_lang=eng; path=/'"><img src="/public/icons/ENG_icon.svg" alt="Clickable icon to change the language to english" ></a>
+                  <a href="../fr/index.html" onclick="document.cookie = 'nf_lang=fr; path=/'"><img src="/public/icons/FR_icon.svg" alt="Clickable icon to change the language to french"></a>
+                  <a href="Glossary.html" class="glossaire">   GLOSSARY </a>
+              </div>
+        </div>
+    </div>
+   </nav>
+
+  <!-- Fin menu-->
+
   <h1>Contact</h1>
 
   <form>
-    <div>
-      <label for="name">Name / Last name</label>
-      <input type="text" id="name" name="user_name">
-    </div>
+      <label for="name" class="contact_text">Name / Last name</label>
+      <input type="text" id="name" name="user_name" class="contact_text">
 
-    <div>
-      <label for="objet">Subject</label>
-      <input type="Subject" id="Subject" name="Subject">
-    </div>
+      <label for="objet" class="contact_text">Subject</label>
+      <input type="objet" id="objet" name="objet" class="contact_text">
     
-    <div>
-      <label for="msg">Message :</label>
-      <textarea id="msg" name="user_message"></textarea>
-    </div>
+      <label for="msg" class="contact_text">Message &#58</label>
+      <textarea id="msg" name="user_message" class="contact_text"></textarea>
     
-    <input type="submit" value="Submit">
+    <input type="submit" value="Send" class="contact_button">
+
   </form>
+
+  <!-- Footer-->
+
+  
+  <footer> 
+    <div class="footer_main"> 
+        <div class="footer_text"> 
+            <p>Aline ROSE MMI 1 &#150 C1</p>
+            <a href="mailto:alinerose262003@gmail.com"> alinerose262003@gmail.com </a>
+              <div class="footer_icon"> 
+                  <p>Project realized in an educational exercise in the
+                  <a href="http://mmimontbeliard.com/contact">  MMI department of Montbéliard </a></p>
+                  <img src="/public/icons/logo_MMI.svg" alt="MMI de Montbéliard Logo">
+              </div>
+        </div>
+     </div>
+  </footer>
+
+<!-- Fin Footer-->
       
 </body>
