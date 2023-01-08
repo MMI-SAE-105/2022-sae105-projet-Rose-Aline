@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{menuIsOpen: false}" :class=""{noscroll:menuIsOpen,}>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="menu_noscroll" {noscroll:menuIsOpen,}>
 
 <head>
   <meta charset="UTF-8">
@@ -20,7 +20,6 @@
       <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
           <img src="/public/icons/menu_icon.webp" alt="Icone cliquable pour accéder au menu">
         </button> 
-      </div>
     </header>
   <!-- Fin Header-->
 
@@ -89,7 +88,6 @@
                   <a href="Glossaire.html" class="glossaire">   GLOSSAIRE </a>
               </div>
         </div>
-    </div>
    </nav>
 
   <!-- Fin menu-->
@@ -107,8 +105,6 @@
   <!-- Carousel-->
 <div class="index">
 
-<body id="article">
-
   <div class="carousel" x-data="{}">
     <div class="carrousel_parent-ecrans" x-ref="parent">
         
@@ -121,9 +117,9 @@
                 <figcaption>
                   <div class="carousel_circle">
                     <div class="text">
-                      <img src="/public/icons/icon_music_wh.svg" class="icon_carousel">
-                      <p>Découverte de la perte de mémoire et du temps à travers l&#39album Everywhere at the end of time de The Caretaker</p>
-                      <p> <a href="Everywhere_at_the_end_of_time.html" alt="Bouton clickable pour accéder a l'article" class="bouton_carousel_plus">Voir plus</a></p>
+                      <img src="/public/icons/icon_music_wh.svg" class="icon_carousel" alt="icone musique">
+                      <p>Découverte de la perte de mémoire et du temps à travers l&#39;album Everywhere at the end of time de The Caretaker</p>
+                      <p> <a href="Everywhere_at_the_end_of_time.html" class="bouton_carousel_plus">Voir plus</a></p>
                     </div>
                   </div>    
              </figcaption> 
@@ -140,9 +136,9 @@
                 <figcaption>
                   <div class="carousel_circle">
                     <div class="text">
-                      <img src="/public/icons/icon_book_wh.svg" class="icon_carousel">
+                      <img src="/public/icons/icon_book_wh.svg" class="icon_carousel" alt="icone livre">
                       <p>Matin brun est une nouvelle qui traite des risques totalitaires et de leurs installations dans nos vies quotidiennes.</p>
-                      <p> <a href="Matin_brun.html" alt="Bouton clickable pour accéder a l'article" class="bouton_carousel_plus">Voir plus</a></p>
+                      <p> <a href="Matin_brun.html" class="bouton_carousel_plus">Voir plus</a></p>
                 </div>
               </div>    
                 </figcaption>
@@ -159,9 +155,9 @@
                 <figcaption>
                   <div class="carousel_circle">
                     <div class="text">
-                  <img src="/public/icons/icon_movie_wh.svg" class="icon_carousel">
-                  <p>Les Triplettes de Belleville est un film d&#39animation  par Sylvain Chomet  qui nous transporte dans une  époque entre réalité et imaginaire.</p>
-                  <p> <a href="Triplettes_de_Belleville.html" alt="Bouton clickable pour accéder a l'article" class="bouton_carousel_plus">Voir plus</a></p>
+                  <img src="/public/icons/icon_movie_wh.svg" class="icon_carousel" alt="icone film">
+                  <p>Les Triplettes de Belleville est un film d&#39;animation  par Sylvain Chomet  qui nous transporte dans une  époque entre réalité et imaginaire.</p>
+                  <p> <a href="Triplettes_de_Belleville.html" class="bouton_carousel_plus">Voir plus</a></p>
                 </div>
               </div>   
                 </figcaption>
@@ -178,9 +174,9 @@
                 <figcaption>
                   <div class="carousel_circle">
                     <div class="text">
-                  <img src="/public/icons/icon_location_wh.svg" class="icon_carousel">
+                  <img src="/public/icons/icon_location_wh.svg" class="icon_carousel" alt="icone lieux">
                   <p>Deep Dive Dubai est le paradis des plongeurs qui souhaitent explorer une ville moderne figée dans le temps.</p>                      
-                  <p> <a href="Deep_Dive_Dubai.html" alt="Bouton clickable pour accéder a l'article" class="bouton_carousel_plus">Voir plus</a></p>
+                  <p> <a href="Deep_Dive_Dubai.html"  class="bouton_carousel_plus">Voir plus</a></p>
                 </div>
               </div>   
                 </figcaption>
@@ -197,16 +193,16 @@
                 <figcaption>
                   <div class="carousel_circle">
                     <div class="text">
-                  <img src="/public/icons/icon_regret_wh.svg" class="icon_carousel">
-                  <p>Notre génération a développé une autre notion du temps et a perdu la capacité d&#39apprécier la sensation d&#39ennui.</p>
-                  <p> <a href="La_notion_du_temps.html" alt="Bouton clickable pour accéder a l'article" class="bouton_carousel_plus">Voir plus</a></p>
+                  <img src="/public/icons/icon_regret_wh.svg" class="icon_carousel" alt="icone regret">
+                  <p>Notre génération a développé une autre notion du temps et a perdu la capacité d&#39;apprécier la sensation d&#39;ennui.</p>
+                  <p> <a href="La_notion_du_temps.html" class="bouton_carousel_plus">Voir plus</a></p>
                 </div>
               </div>   
                 </figcaption>
             </figure>
         </div>
 
-        <div class="carrousel_ecran" class="icon_carousel">
+        <div class="carrousel_ecran">
           <div class="carrousel_btn_countainer">
             <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant" @click ="$refs.parent.scrollLeft -= $refs.parent.clientWidth" ></button>
           </div>
@@ -215,9 +211,9 @@
                 <figcaption>
                   <div class="carousel_circle">
                     <div class="text">
-                  <img src="/public/icons/icon_hope_wh.svg" class="icon_carousel">
+                  <img src="/public/icons/icon_hope_wh.svg" class="icon_carousel" alt="icone espoir">
                   <p>Le télétravail est une opportunité dans le futur pour une vie plus organisée, efficace et libre.</p>
-                  <p> <a href="Teletravail.html" alt="Bouton clickable pour accéder a l'article" class="bouton_carousel_plus">Voir plus</a></p>
+                  <p> <a href="Teletravail.html" class="bouton_carousel_plus">Voir plus</a></p>
                 </div>
               </div>   
                 </figcaption>
@@ -232,15 +228,13 @@
 
 
   <!-- Footer-->
-
-  
       <footer> 
         <div class="footer_main"> 
             <div class="footer_text"> 
-                <p>Aline ROSE MMI 1 &#150 C1</p>
+                <p>Aline ROSE MMI 1 &ndash; C1</p>
                 <a href="mailto:alinerose262003@gmail.com"> alinerose262003@gmail.com </a>
                   <div class="footer_icon"> 
-                      <p>Projet réalisé dans le cadre d&#39un exercice
+                      <p>Projet réalisé dans le cadre &#39; un exercice
                       pédagogique au
                       <a href="http://mmimontbeliard.com/contact"> département MMI de Montbéliard </a></p>
                       <img src="/public/icons/logo_MMI.svg" alt="Logo du site du département MMI de Montbéliard">
@@ -248,7 +242,6 @@
             </div>
          </div>
       </footer>
-
   <!-- Fin Footer-->
   
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{menuIsOpen: false}" :class=""{noscroll:menuIsOpen,}>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="" {noscroll:menuIsOpen,}>
 
 <head>
   <meta charset="UTF-8">
@@ -19,79 +19,80 @@
     <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
         <img src="/public/icons/menu_icon.webp" alt="Icone cliquable pour accéder au menu">
       </button> 
-    </div>
   </header>
   <!-- Fin Header-->
+
 
 
   <!-- Menu -->
 
   <nav id="mainNav"  
-      class="menu" :class="menuIsOpen && 'menu--open'"
-  >
-    <ul>
-      <li>
-          <img src="/public/icons/Accueil_icon.svg" alt="Icone d'acceuil" >
-          <a href="index.html">Accueil</a>
-        </li>
+  class="menu" :class="menuIsOpen && 'menu--open'"
+>
+<div class="menu_article">
+<ul>
+  <li>
+      <img src="/public/icons/Accueil_icon.svg" alt="Icone d'acceuil" >
+      <a href="index.html">Accueil</a>
+    </li>
 
-        <li>
-          <img src="/public/icons/icon_music.svg" alt="Icone musique">
-          <a href="Everywhere_at_the_end_of_time.html">Everywhere at the end of time</a>
-        </li>
-          
-        <li>
-          <img src="/public/icons/icon_movie.svg" alt="Icone film">
-          <a href="Triplettes_de_Belleville.html">Les triplettes de Belleville</a>
-        </li>
+    <li>
+      <img src="/public/icons/icon_music.svg" alt="Icone musique">
+      <a href="Everywhere_at_the_end_of_time.html">Everywhere at the end of time</a>
+    </li>
+      
+    <li>
+      <img src="/public/icons/icon_movie.svg" alt="Icone film">
+      <a href="Triplettes_de_Belleville.html">Les triplettes de Belleville</a>
+    </li>
 
-        <li>
-          <img src="/public/icons/icon_book.svg" alt="Icone livre">
-          <a href="Matin_brun.html">Matin brun</a>
-        </li>
+    <li>
+      <img src="/public/icons/icon_book.svg" alt="Icone livre">
+      <a href="Matin_brun.html">Matin brun</a>
+    </li>
 
-        <li>
-          <img src="/public/icons/icon_location.svg" alt="Icone lieu">
-          <a href="Deep_Dive_Dubai.html">Deep Dive Dubai</a>
-        </li>
+    <li>
+      <img src="/public/icons/icon_location.svg" alt="Icone lieu">
+      <a href="Deep_Dive_Dubai.html">Deep Dive Dubai</a>
+    </li>
 
-        <li>
-          <img src="/public/icons/icon_hope.svg" alt="Icone espoir">
-          <a href="Teletravail.html">Télétravail</a>
-        </li>
-          
-        <li>
-          <img src="/public/icons/icon_regret.svg" alt="Icone regret">
-          <a href="La_notion_du_temps.html">La notion du temps</a>
-        </li>
-      </ul>
-    </div>
-        <div class="menu_section_jaune">
-            <ul>
-              <li>
-                <a href="Contact.html">• CONTACT</a>
-              </li>
+    <li>
+      <img src="/public/icons/icon_hope.svg" alt="Icone espoir">
+      <a href="Teletravail.html">Télétravail</a>
+    </li>
+      
+    <li>
+      <img src="/public/icons/icon_regret.svg" alt="Icone regret">
+      <a href="La_notion_du_temps.html">La notion du temps</a>
+    </li>
+  </ul>
+</div>
+    <div class="menu_section_jaune">
+        <ul>
+          <li>
+            <a href="Contact.html">• CONTACT</a>
+          </li>
 
-              <li>
-                <a href="Autres_Projets.html">• AUTRES PROJETS </a>
-              </li>
-                
-              <li>
-              <a href="A_propos.html"> • À PROPOS</a>
-              </li>
-              <hr>
-            </ul>
+          <li>
+            <a href="Autres_Projets.html">• AUTRES PROJETS </a>
+          </li>
             
-            <div class="menu_jaune_option">
-                <a href="../eng/index.html" onclick="document.cookie = 'nf_lang=eng; path=/'"><img src="/public/icons/ENG_icon.svg" alt="Icone cliquable pour changer la langue en anglais" ></a>
-                <a href="../fr/index.html" onclick="document.cookie = 'nf_lang=fr; path=/'"><img src="/public/icons/FR_icon.svg" alt="Icone cliquable pour changer la langue en français"></a>
-                <a href="Glossaire.html" class="glossaire">   GLOSSAIRE </a>
-            </div>
-      </div>
+          <li>
+          <a href="A_propos.html"> • À PROPOS</a>
+          </li>
+          <hr>
+        </ul>
+        
+        <div class="menu_jaune_option">
+            <a href="../eng/index.html" onclick="document.cookie = 'nf_lang=eng; path=/'"><img src="/public/icons/ENG_icon.svg" alt="Icone cliquable pour changer la langue en anglais" ></a>
+            <a href="../fr/index.html" onclick="document.cookie = 'nf_lang=fr; path=/'"><img src="/public/icons/FR_icon.svg" alt="Icone cliquable pour changer la langue en français"></a>
+            <a href="Glossaire.html" class="glossaire">   GLOSSAIRE </a>
+        </div>
   </div>
-  </nav>
+</nav>
 
-  <!-- Fin menu-->
+<!-- Fin menu-->
+
    <div class="main_article">
 
     <h1>Une époque loufoque</h1>
@@ -100,7 +101,7 @@
       <p>
         Ce film nous emmène dans un 
         <b>univers délirant et nostalgique</b>
-        en suivant les mésaventures d&#39une équipe étrange de quatre mamies, leur chien et un cycliste mélancolique.
+        en suivant les mésaventures d&#39;une équipe étrange de quatre mamies, leur chien et un cycliste mélancolique.
       </p>
     </div>
     <video controls="false" autoplay="autoplay" poster="/public/img/Video_cover.webp"  alt="Image cliquable pour lancer la vidéo" id="image_chapo"><source src="https://médias.alinerose.fr/Les_triplettes_de_Belleville.mp4" type="video/mp4"></video>
@@ -108,16 +109,16 @@
     <div class ="article_text">
       <p>
         Les Triplettes de Belleville sortent en salle en 2003.
-        Ce film d&#39animation réalisé par 
+        Ce film d&#39;animation réalisé par 
         <a href="https://sylvainchomet.com/sylvain-chomet/" class="link">Sylvain Chomet</a>
         obtient plusieurs récompenses et nominations.
-        Pourtant, ce dessin animé n&#39est pas vraiment destiné aux enfants. 
+        Pourtant, ce dessin animé n&#39;est pas vraiment destiné aux enfants. 
         </p>
         <p>
-        Dans la France des années 50, on suit les aventures de Mémé Suza et de son petit&#150fils orphelin, Champion.
+        Dans la France des années 50, on suit les aventures de Mémé Suza et de son petit&ndash;fils orphelin, Champion.
         En compagnie de leur gros chien Bruno, elle va le pousser dans sa passion du vélo, jusque sur les routes du Tour de France. 
-        De mystérieux bandits vont alors le kidnapper pour l&#39emmener aux Etats&#150Unis.
-        Affrontant tous les dangers, sa grand&#150mère part le sauver avec l&#39aide de trois anciennes stars des années 30, les Triplettes de Belleville. 
+        De mystérieux bandits vont alors le kidnapper pour l&#39;emmener aux Etats&ndash;Unis.
+        Affrontant tous les dangers, sa grand&ndash;mère part le sauver avec l&#39;aide de trois anciennes stars des années 30, les Triplettes de Belleville. 
       </p>
 
       <img src="/public/img/affiche_les_triplettes_de_belleville.webp" alt="Image de l'affiche des Triplettes de Bellevilles" class="Image_article">
@@ -125,26 +126,26 @@
 
       <h2>Un monde bizarre</h2>
       <p>
-        Cette histoire est <b>un mélange étonnant et indescriptible &#58 humour, inquiétude, joie, répulsion&#133</b>
+        Cette histoire est <b>un mélange étonnant et indescriptible &#58; humour, inquiétude, joie, répulsion…</b>
         Ainsi, elle nous plonge dans un univers nostalgique bourré de références avec une tonalité mélancolique.
-        L&#39animation nous entraîne dans un monde bien particulier qui mélange imaginaire et réel &#58 les villes de New-York et Montréal.
+        L&#39;animation nous entraîne dans un monde bien particulier qui mélange imaginaire et réel &#58; les villes de New-York et Montréal.
         En plus, les personnalités sont parfois grotesques, caricaturales mais toujours attachantes.
-        La quasi&#150absence de dialogue fait ressortir leur expressivité.
+        La quasi&ndash;absence de dialogue fait ressortir leur expressivité.
       </p>
       <p>
-        En fait, c&#39est <b>une véritable galerie de portraits bizarres, loufoques, obsédés par leurs passions et leurs manies étranges.</b>
+        En fait, c&#39;est <b>une véritable galerie de portraits bizarres, loufoques, obsédés par leurs passions et leurs manies étranges.</b>
         Aussi, les clichés ajoutent au côté humoristique de ce film.
         Les Français sont des mangeurs de grenouilles, amateurs de vin et de baguette.
         Les Américains sont obèses comme leur Statue de la Liberté avec son hamburger.
       </p>
 
       <img src="/public/img/capture_ecran.webp" alt="Image de l'affiche des Triplettes de Bellevilles" class="Image_article" id="red">
-      <h3>Début du film Les triplettes de Belleville, avec Mémé Suza, son petit&#150fils Champion et son chien Bruno.</h3>
+      <h3>Début du film Les triplettes de Belleville, avec Mémé Suza, son petit&ndash;fils Champion et son chien Bruno.</h3>
 
       <h2>La roue du temps</h2>
-      <p>Par ailleurs, ce film nous invite sous l&#39amusement à réfléchir sur le temps et les impacts de notre passé sur notre présent comme la passion du vélo de Champion qui vient d&#39un souvenir de ses parents ou encore la phobie des trains du chien Bruno qui provient d&#39un ancien traumatisme.
+      <p>Par ailleurs, ce film nous invite sous l&#39;amusement à réfléchir sur le temps et les impacts de notre passé sur notre présent comme la passion du vélo de Champion qui vient d&#39;un souvenir de ses parents ou encore la phobie des trains du chien Bruno qui provient d&#39;un ancien traumatisme.
         En conclusion, le temps tourne et avance comme une roue de vélo.
-        L&#39époque des Triplettes montre encore ses splendeurs fanées et finit en apothéose avec une ébouriffante course&#150poursuite.
+        L&#39;époque des Triplettes montre encore ses splendeurs fanées et finit en apothéose avec une ébouriffante course&ndash;poursuite.
       </p>   
 
       <a href="#" class="top"><img src="/public/icons/button_scroll_up.svg" alt="bouton cliquable pour retourner en haut de la page"></a>
@@ -153,7 +154,7 @@
         <h1>Filmographie & Autres réalisations</h1>
           <div class="filmographie_introduction">
             <p>Sylvain Chomet est un dessinateur et scénariste de bande dessinée et de films ainsi que compositeur français. 
-            Ce diplômé des Beaux-Arts d'Angoulême a gagné de nombreuses récompenses et Oscars dont l&#39étoile d'or du cinéma français, le prix Génie du meilleur film, le grand Prix du cinéma européen et le césar du meilleur film d'animation.</p>
+            Ce diplômé des Beaux-Arts d'Angoulême a gagné de nombreuses récompenses et Oscars dont l&#39;étoile d'or du cinéma français, le prix Génie du meilleur film, le grand Prix du cinéma européen et le césar du meilleur film d'animation.</p>
           </div>
             <!-- Carousel-->
               <div class="carousel_filmographie" x-data="{}">
@@ -171,7 +172,7 @@
                                   <h2>1998</h2>
                                   <span class="filmograghie_big_text">La vieille dame et les pigeons</span>
                                   <hr class="filmograpgie_ligne_hr">
-                                  <p>Court métrage d&#39animation</p>
+                                  <p>Court métrage d&#39;animation</p>
                                 </div>
                               </div>    
                          </figcaption> 
@@ -191,7 +192,7 @@
                                   <h2>2003</h2>
                                   <span class="filmograghie_big_text">Les triplettes de belleville</span>
                                   <hr class="filmograpgie_ligne_hr">
-                                  <p>Film d&#39animation</p>
+                                  <p>Film d&#39;animation</p>
                             </div>
                           </div>   
                             </figcaption>
@@ -209,7 +210,7 @@
                               <div class="carousel_circle">
                                 <div class="filmograghie_text">
                                   <h2>2006</h2>
-                                  <span class="filmograghie_big_text">Paris, je t&#39aime </span>
+                                  <span class="filmograghie_big_text">Paris, je t&#39;aime </span>
                                   <hr class="filmograpgie_ligne_hr">
                                   <p>Comédie dramatique</p>
                             </div>
@@ -229,9 +230,9 @@
                               <div class="carousel_circle">
                                 <div class="filmograghie_text">
                                   <h2>2010</h2>
-                                  <span class="filmograghie_big_text">L&#39illusionniste</span>
+                                  <span class="filmograghie_big_text">L&#39;illusionniste</span>
                                   <hr class="filmograpgie_ligne_hr">
-                                  <p>Film d&#39animation</p>
+                                  <p>Film d&#39;animation</p>
                             </div>
                           </div>   
                             </figcaption>
@@ -308,22 +309,20 @@
     
       </div>
           <!-- Footer-->
-
           <footer> 
             <div class="footer_main"> 
                 <div class="footer_text"> 
-                    <p>Aline ROSE MMI 1 &#150 C1</p>
+                    <p>Aline ROSE MMI 1 &ndash; C1</p>
                     <a href="mailto:alinerose262003@gmail.com"> alinerose262003@gmail.com </a>
                       <div class="footer_icon"> 
-                          <p>Projet réalisé dans le cadre d&#39un exercice
+                          <p>Projet réalisé dans le cadre &#39; un exercice
                           pédagogique au
                           <a href="http://mmimontbeliard.com/contact"> département MMI de Montbéliard </a></p>
                           <img src="/public/icons/logo_MMI.svg" alt="Logo du site du département MMI de Montbéliard">
                       </div>
                 </div>
-            </div>
+             </div>
           </footer>
-        </div>
         <!-- Fin Footer-->
 
 </body> 

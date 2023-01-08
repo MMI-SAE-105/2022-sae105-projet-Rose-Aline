@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{menuIsOpen: false}" :class=""{noscroll:menuIsOpen,}>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="" {noscroll:menuIsOpen,}>
 
 <head>
   <meta charset="UTF-8">
@@ -21,7 +21,6 @@
   <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
       <img src="/public/icons/menu_icon.webp" alt="Icone cliquable pour accéder au menu">
     </button> 
-  </div>
 </header>
 <!-- Fin Header-->
 
@@ -105,7 +104,7 @@
       <label for="objet" class="contact_text">objet</label>
       <input type="objet" id="objet" name="objet" class="contact_text">
     
-      <label for="msg" class="contact_text">Message &#58</label>
+      <label for="msg" class="contact_text">Message &#58;</label>
       <textarea id="msg" name="user_message" class="contact_text"></textarea>
     
     <input type="submit" value="Envoyer" class="contact_button">
@@ -114,14 +113,13 @@
 
   
     <!-- Footer-->
-
     <footer> 
       <div class="footer_main"> 
           <div class="footer_text"> 
-              <p>Aline ROSE MMI 1 &#150 C1</p>
+              <p>Aline ROSE MMI 1 &ndash; C1</p>
               <a href="mailto:alinerose262003@gmail.com"> alinerose262003@gmail.com </a>
                 <div class="footer_icon"> 
-                    <p>Projet réalisé dans le cadre d&#39un exercice
+                    <p>Projet réalisé dans le cadre &#39; un exercice
                     pédagogique au
                     <a href="http://mmimontbeliard.com/contact"> département MMI de Montbéliard </a></p>
                     <img src="/public/icons/logo_MMI.svg" alt="Logo du site du département MMI de Montbéliard">
@@ -129,7 +127,6 @@
           </div>
        </div>
     </footer>
-
 <!-- Fin Footer-->
 
 </body>
